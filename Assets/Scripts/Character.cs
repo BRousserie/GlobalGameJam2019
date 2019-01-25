@@ -9,6 +9,12 @@ public class Character : MonoBehaviour
     private int m_money; // money possessed by the player
     public int Money { get { return m_money; } }
 
+    public Character(Resource[] resources = null, int money = 0)
+    {
+        m_resources = resources;
+        money = 0;
+    }
+
     #region get/set/add resources and money
     /**
      * Used to set the whole resources' array 
