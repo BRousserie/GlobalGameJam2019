@@ -8,4 +8,10 @@ public class Resource
     public ResourceType Type { get { return m_type; } }
     private int m_value;
     public int Value { get { return m_value; } set { m_value = value; } }
+
+    public Resource(ResourceType type, int value = 0)
+    {
+        m_type = type;
+        m_value = value;
+    }
 }
