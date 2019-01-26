@@ -4,7 +4,9 @@ using UnityEngine;
 
 public abstract class Building : MonoBehaviour
 {
-    public Resource[] Costs; // building costs by resource type
+    public static GameObject selectedBuilding;
+
+    public Resource[] Costs = Resource.resourcesList(); // building costs by resource type
     public int Price; // building price
     private Camera cam;
 
