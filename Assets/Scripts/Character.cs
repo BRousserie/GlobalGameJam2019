@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    public Resource[] Resources = new Resource[Resource.NB_RESOURCE_TYPES];
+    public Resource[] Resources = Resource.resourcesList();
     public int Money;
     public GameObject Mesh;
     public GameObject Orientation;
     private float rotation;
-    
+    public StatsUI stats;
+
     #region get/set/add resources and money
     /**
      * Used to set the whole resources' array 
@@ -23,6 +24,7 @@ public class Character : MonoBehaviour
                 "Assigning " + resources.Length + " resources " +
                 " but " + Resource.NB_RESOURCE_TYPES +
                 " different resource types exist (when calling Character.setResources())");
+        stats.UpdateInfos();
     }
 
     /**
@@ -31,6 +33,7 @@ public class Character : MonoBehaviour
     public void setResources(Resource resource)
     {
         Resources[(int)resource.Type].Value = resource.Value;
+        stats.UpdateInfos();
     }
 
     /**
@@ -39,6 +42,7 @@ public class Character : MonoBehaviour
     public void setResources(ResourceType type, int value)
     {
         Resources[(int)type].Value = value;
+        stats.UpdateInfos();
     }
 
     /**
@@ -48,6 +52,7 @@ public class Character : MonoBehaviour
     public void addResources(Resource resource)
     {
         Resources[(int)resource.Type].Value += resource.Value;
+        stats.UpdateInfos();
     }
 
     /**
@@ -56,6 +61,7 @@ public class Character : MonoBehaviour
     public void addMoney(int amount)
     {
         Money += amount;
+        stats.UpdateInfos();
     }
     #endregion
 

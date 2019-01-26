@@ -1,4 +1,6 @@
-﻿public enum ResourceType { Wood = 0 }; 
+﻿using System;
+
+public enum ResourceType { Wood = 0 }; 
 //Si l'on ajoute un nouveau type, il faut mettre à jour NB_RESOURCE_TYPES ligne 5
 
 public class Resource
@@ -14,5 +16,15 @@ public class Resource
     {
         m_type = type;
         m_value = value;
+    }
+
+    public static Resource[] resourcesList()
+    {
+        Resource[] resources = new Resource[NB_RESOURCE_TYPES];
+        foreach (ResourceType type in Enum.GetValues(typeof(ResourceType)))
+        {
+            resources[(int)type] = new Resource(type);
+        }
+        return resources;
     }
 }
