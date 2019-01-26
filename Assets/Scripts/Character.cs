@@ -5,7 +5,6 @@ using UnityEngine;
 public class Character : MonoBehaviour
 {
     public Resource[] Resources = Resource.resourcesList();
-    public int Money;
     public GameObject Mesh;
     public GameObject Orientation;
     private float rotation;
@@ -59,21 +58,23 @@ public class Character : MonoBehaviour
     }
 
     /**
-     * Used when the player earns or spends money
+     * Used when the player recieves or loses resources 
+     * resource.Value is negative when losing resources
      */
-    public void addMoney(int amount)
+    public void loseResources(Resource[] costs)
     {
-        Money += amount;
+        for(int i = 0; i < Resource.NB_RESOURCE_TYPES; i++) 
+            Resources[i].Value -= costs[i].Value;
         stats.UpdateInfos();
     }
     #endregion
 
 
-    public bool canBuy(Building building)
+    public Resource canBuy(Building building)
     {
         for (int i = 0; i < Resource.NB_RESOURCE_TYPES; i++)
-            if (Resources[i].Value < building.Costs[i].Value) return false;
-        return Money > building.Price;
+            if (Resources[i].Value < building.Costs[i].Value) return building.Costs[i];
+        return null;
     }
 
     // Update is called once per frame
