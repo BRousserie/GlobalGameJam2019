@@ -11,7 +11,6 @@ public abstract class Building : MonoBehaviour
     protected void Start()
     {
         cam = Camera.main;
-        Debug.Log(Camera.main);
     }
 
     void OnMouseUp()
