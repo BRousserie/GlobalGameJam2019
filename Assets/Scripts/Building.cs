@@ -15,7 +15,7 @@ public abstract class Building : MonoBehaviour
         cam = Camera.main;
     }
 
-    void OnMouseUp()
+    /*void OnMouseUp()
     {
         RaycastHit hit;
         if (!Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hit))
@@ -37,5 +37,5 @@ public abstract class Building : MonoBehaviour
         cube.transform.position = p0;
         cube.transform.localScale = new Vector3(0.1f, 0.3f, 0.1f);
         cube.transform.rotation = Quaternion.FromToRotation(transform.up, normal) * transform.rotation;
-    }
+    }*/
 }
