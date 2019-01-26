@@ -9,6 +9,10 @@ public class Character : MonoBehaviour
     public GameObject Mesh;
     public GameObject Orientation;
     private float rotation;
+
+    public LayerMask collisionLayer;
+
+    public Transform [] raycastOrigins;
     
     #region get/set/add resources and money
     /**
@@ -70,60 +74,83 @@ public class Character : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+        Vector3 globalRotation = Vector3.zero;
+        
         if (Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.UpArrow))
         {
-            transform.Rotate(0, .5f, 0);
-            transform.Rotate(0, 0, .5f);
+            globalRotation.y = 0.5f;
+            globalRotation.z = 0.5f;
             rotation = -45;
         }
 
 
         else if (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.UpArrow))
         {
-            transform.Rotate(0, -.5f, 0);
-            transform.Rotate(0, 0, .5f);
+            globalRotation.y = -0.5f;
+            globalRotation.z = 0.5f;
             rotation = 45;
         }
 
         else if (Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.DownArrow))
         {
-            transform.Rotate(0, .5f, 0);
-            transform.Rotate(0, 0, -.5f);
+            globalRotation.y = 0.5f;
+            globalRotation.z = -0.5f;
             rotation = -135;
         }
 
 
         else if (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.DownArrow))
         {
-            transform.Rotate(0, -.5f, 0);
-            transform.Rotate(0, 0, -.5f);
+            globalRotation.y = -0.5f;
+            globalRotation.z = -0.5f;
             rotation = 135;
         }
         
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
-            transform.Rotate(0, .5f, 0);
+            globalRotation.y = 0.5f;
             rotation = -90;
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            transform.Rotate(0, -.5f, 0);
+            globalRotation.y = -0.5f;
             rotation = 90;
         }
-
-
+        
         else if (Input.GetKey(KeyCode.UpArrow))
         {
-            transform.Rotate(0, 0, .5f);
+            globalRotation.z = 0.5f;
             rotation = 0;
         }
         else if (Input.GetKey(KeyCode.DownArrow))
         {
-            transform.Rotate(0, 0, -.5f);
+            globalRotation.z = -0.5f;
             rotation = 180;
         }
         Mesh.transform.localRotation = Quaternion.Euler(rotation, 0, 0);
+
+        if (!FoundObstacle())
+        {
+            transform.Rotate(globalRotation);
+        }
         //Mesh.transform.LookAt(Orientation.transform, Mesh.transform.up);
+    }
+
+    bool FoundObstacle ()
+    {
+        for (int i = 0; i < raycastOrigins.Length; i++)
+        {
+            Vector3 fwd = raycastOrigins[i].transform.TransformDirection(Vector3.up) * 0.02f;
+            Debug.DrawRay(raycastOrigins[i].transform.position, fwd, Color.green);
+
+            if (Physics.Raycast(raycastOrigins[i].transform.position, fwd, 0.02f, collisionLayer))
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
 }

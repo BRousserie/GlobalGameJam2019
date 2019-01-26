@@ -1,11 +1,15 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Batiment : MonoBehaviour
+public class SpawnManager : MonoBehaviour
 {
     Camera cam;
     bool readyClick = true;
+    public GameObject batimentPrefab;
+
     //GameObject cube;
     void Start()
     {
@@ -19,6 +23,7 @@ public class Batiment : MonoBehaviour
     }
 
     WaitForSeconds wfs;
+    
 
     /*IEnumerator test()
     {
@@ -47,10 +52,11 @@ public class Batiment : MonoBehaviour
         Vector3 p0 = vertices[triangles[hit.triangleIndex * 3]];
         Vector3 normal = normals[triangles[hit.triangleIndex * 3]];
         Transform hitTransform = hit.collider.transform;
+
+        Quaternion rotation = Quaternion.FromToRotation(Vector3.up, normal);
         
-        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        cube.transform.position = p0;
-        cube.transform.localScale = new Vector3(0.1f, 0.3f, 0.1f);
-        cube.transform.rotation = Quaternion.FromToRotation(transform.up, normal) * transform.rotation;
+        GameObject batiment = Instantiate(batimentPrefab, p0, rotation);
     }
+    
+
 }
