@@ -91,7 +91,6 @@ public class Character : MonoBehaviour
             rotation = -45;
         }
 
-
         else if (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.UpArrow))
         {
             globalRotation.y = -0.5f;

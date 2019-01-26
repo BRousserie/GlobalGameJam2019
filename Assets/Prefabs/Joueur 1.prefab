@@ -1,5 +1,53 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6174458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6174459}
+  - component: {fileID: 4357494663362985168}
+  m_Layer: 0
+  m_Name: AlienSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6174459
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6174458}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.022, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_Children: []
+  m_Father: {fileID: 7852196416205327448}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4357494663362985168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6174458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469ac4eb8180e3a49836e80c94f3b923, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  started: 1
+  planete: {fileID: 0}
+  alienPrefabs:
+  - {fileID: 4434167262948346408, guid: 2740e20dd7859e04489905c5fe3b310c, type: 3}
+  - {fileID: 4434167262948346408, guid: e802ffdc88b7e8340a49189494ac5bd3, type: 3}
 --- !u!1 &4951022905127180071
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,6 +233,7 @@ Transform:
   m_Children:
   - {fileID: 7852196416290099839}
   - {fileID: 7852196416760522527}
+  - {fileID: 6174459}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -257,7 +306,7 @@ Camera:
   m_GameObject: {fileID: 7852196416290099824}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
@@ -605,12 +654,6 @@ PrefabInstance:
       objectReference: {fileID: 7852196416205327449}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63f764f136058144b8e8fdc251aeb8ff, type: 3}
---- !u!224 &6428115032050271009 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
-    type: 3}
-  m_PrefabInstance: {fileID: 1434437690}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &4094349371041216782 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4094349370151842100, guid: 63f764f136058144b8e8fdc251aeb8ff,
@@ -623,3 +666,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a928e4e6573b6e747ad73c4424970e80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!224 &6428115032050271009 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
+    type: 3}
+  m_PrefabInstance: {fileID: 1434437690}
+  m_PrefabAsset: {fileID: 0}
