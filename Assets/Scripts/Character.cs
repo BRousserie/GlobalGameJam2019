@@ -51,9 +51,9 @@ public class Character : MonoBehaviour
      * Used when the player recieves or loses resources 
      * resource.Value is negative when losing resources
      */
-    public void addResources(Resource resource)
+    public void addResources(ResourceType type, int qte)
     {
-        Resources[(int)resource.Type].Value += resource.Value;
+        Resources[(int)type].Value += qte;
         stats.UpdateInfos();
     }
 
@@ -72,6 +72,7 @@ public class Character : MonoBehaviour
 
     public Resource canBuy(Building building)
     {
+        print(building);
         for (int i = 0; i < Resource.NB_RESOURCE_TYPES; i++)
             if (Resources[i].Value < building.Costs[i].Value) return building.Costs[i];
         return null;

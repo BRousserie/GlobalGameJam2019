@@ -11,7 +11,6 @@ public class SpawnManager : MonoBehaviour
     public GameObject batimentPrefab;
     public Character Player;
     public Text Warning;
-    private Commercial[] shops;
 
     //GameObject cube;
     void Start()
@@ -68,6 +67,8 @@ public class SpawnManager : MonoBehaviour
         GameObject batiment = Instantiate(Building.selectedBuilding, p0, rotation);
         Player.loseResources(Building.selectedBuilding.GetComponent<Building>().Costs);
 
+        Commercial com = batiment.GetComponent<Commercial>();
+        if (com != null) com.Player = Player;
     }
     
     void afficherMessage(Resource res)

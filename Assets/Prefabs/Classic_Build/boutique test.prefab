@@ -128,8 +128,10 @@ MonoBehaviour:
   - Type: 0
     Value: 0
   - Type: 1
-    Value: 0
-  Outcome: 5
+    Value: 5
+  Outcome: 1
+  Delay: 10
+  Player: {fileID: 0}
 --- !u!65 &3603098509711533728
 BoxCollider:
   m_ObjectHideFlags: 0

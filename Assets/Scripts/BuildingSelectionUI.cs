@@ -9,6 +9,5 @@ public class BuildingSelectionUI : MonoBehaviour
     public void SelectBuilding()
     {
         Building.selectedBuilding = BuildingPrefab;
-        print("rien");
     }
 }

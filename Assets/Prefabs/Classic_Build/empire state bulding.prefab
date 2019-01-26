@@ -50,7 +50,9 @@ MonoBehaviour:
     Value: 5
   - Type: 1
     Value: 10
-  Outcome: 25
+  Outcome: 1
+  Delay: 2
+  Player: {fileID: 0}
 --- !u!65 &726455795407331567
 BoxCollider:
   m_ObjectHideFlags: 0

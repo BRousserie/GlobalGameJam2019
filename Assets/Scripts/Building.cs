@@ -7,12 +7,6 @@ public abstract class Building : MonoBehaviour
     public static GameObject selectedBuilding;
 
     public Resource[] Costs = Resource.resourcesList(); // building costs by resource type
-    private Camera cam;
-
-    protected void Start()
-    {
-        cam = Camera.main;
-    }
 
     /*void OnMouseUp()
     {
