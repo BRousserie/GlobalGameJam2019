@@ -86,6 +86,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4442392520486364808}
+  - component: {fileID: 3283903658824016589}
   m_Layer: 0
   m_Name: canon_1
   m_TagString: Untagged
@@ -110,6 +111,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3283903658824016589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5174981470435976826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e64e5076768b2644991413e28c2fd5fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Costs:
+  - Type: 0
+    Value: 50
+  - Type: 1
+    Value: 100
+  Damages: 30
 --- !u!1 &7031643672256682160
 GameObject:
   m_ObjectHideFlags: 0

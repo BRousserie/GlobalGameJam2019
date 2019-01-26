@@ -2,13 +2,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class SpawnManager : MonoBehaviour
 {
     Camera cam;
     bool readyClick = true;
     public GameObject batimentPrefab;
+    public Character Player;
+    public Text Warning;
+    private Commercial[] shops;
 
     //GameObject cube;
     void Start()
@@ -37,6 +40,13 @@ public class SpawnManager : MonoBehaviour
 
     void OnMouseUp ()
     {
+        if (Building.selectedBuilding == null) return;
+
+        Resource tmp = Player.canBuy(Building.selectedBuilding.GetComponent<Building>());
+        if (tmp != null) {
+            afficherMessage(tmp);
+            return;
+        }
         RaycastHit hit;
         if (!Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hit))
             return;
@@ -55,8 +65,21 @@ public class SpawnManager : MonoBehaviour
 
         Quaternion rotation = Quaternion.FromToRotation(Vector3.up, normal);
         
-        GameObject batiment = Instantiate(batimentPrefab, p0, rotation);
+        GameObject batiment = Instantiate(Building.selectedBuilding, p0, rotation);
+        Player.loseResources(Building.selectedBuilding.GetComponent<Building>().Costs);
+
     }
     
+    void afficherMessage(Resource res)
+    {
+        Warning.transform.parent.gameObject.SetActive(true);
+        Warning.text = "You need " + res.Value + " " + res.Type;
+        StartCoroutine(delayHide());
+    }
 
+    IEnumerator delayHide()
+    {
+        yield return new WaitForSeconds(3f);
+        Warning.transform.parent.gameObject.SetActive(false);
+    }
 }

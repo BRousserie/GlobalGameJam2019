@@ -16,7 +16,8 @@ public class StatsUI : MonoBehaviour
 
     public void UpdateInfos()
     {
-        MoneyAmount.text = ""+ Player.Money;
+        MoneyAmount.text = ""+ Player.Resources[(int)ResourceType.Money].Value;
         WoodAmount.text = "" + Player.Resources[(int)ResourceType.Wood].Value;
+        print(Player.Resources[(int)ResourceType.Wood].Value);
     }
 }

@@ -7,7 +7,6 @@ public abstract class Building : MonoBehaviour
     public static GameObject selectedBuilding;
 
     public Resource[] Costs = Resource.resourcesList(); // building costs by resource type
-    public int Price; // building price
     private Camera cam;
 
     protected void Start()

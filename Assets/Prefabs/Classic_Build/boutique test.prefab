@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 428903217570082084}
   - component: {fileID: 4913173849042064610}
   - component: {fileID: 4334080565683209634}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boutique_test:group1_boutique_test:pCube2_boutique_test:polySurface2_boutique_test:polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -86,7 +86,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3745597577994127070}
-  m_Layer: 0
+  - component: {fileID: 7156740008117504837}
+  - component: {fileID: 3603098509711533728}
+  m_Layer: 9
   m_Name: boutique test
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -110,6 +112,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7156740008117504837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6762724371497992356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37e5332c5f5b5dd408caff59a3199375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Costs:
+  - Type: 0
+    Value: 0
+  - Type: 1
+    Value: 0
+  Outcome: 5
+--- !u!65 &3603098509711533728
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6762724371497992356}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.9643139, z: 1}
+  m_Center: {x: 0, y: 0.48215634, z: 0}
 --- !u!1 &9054363533917280251
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,7 +154,7 @@ GameObject:
   - component: {fileID: 7723040316793511213}
   - component: {fileID: 3270842361371724692}
   - component: {fileID: 5509475371129842750}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boutique_test:group1_boutique_test:pCylinder3_boutique_test:polySurface2_boutique_test:polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +231,7 @@ GameObject:
   - component: {fileID: 5664172131009908784}
   - component: {fileID: 278549089088831741}
   - component: {fileID: 2620689764663249183}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: boutique_test:group1_boutique_test:pCube1_boutique_test:polySurface2_boutique_test:polySurface1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

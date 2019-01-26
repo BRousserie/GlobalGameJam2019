@@ -1,21 +1,20 @@
 ﻿using System;
 
-public enum ResourceType { Wood = 0 }; 
+public enum ResourceType { Wood = 0, Money }; 
 //Si l'on ajoute un nouveau type, il faut mettre à jour NB_RESOURCE_TYPES ligne 5
 
+[Serializable]
 public class Resource
 {
-    public const int NB_RESOURCE_TYPES = 1;
+    public const int NB_RESOURCE_TYPES = 2;
 
-    private ResourceType m_type;
-    public ResourceType Type { get { return m_type; } }
-    private int m_value;
-    public int Value { get { return m_value; } set { m_value = value; } }
+    public ResourceType Type;
+    public int Value;
 
     public Resource(ResourceType type, int value = 0)
     {
-        m_type = type;
-        m_value = value;
+        Type = type;
+        Value = value;
     }
 
     public static Resource[] resourcesList()

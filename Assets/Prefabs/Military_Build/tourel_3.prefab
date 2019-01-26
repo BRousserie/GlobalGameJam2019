@@ -164,6 +164,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6874593595212203855}
+  - component: {fileID: 8066052049051930503}
   m_Layer: 0
   m_Name: tourel_3
   m_TagString: Untagged
@@ -187,6 +188,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8066052049051930503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7205215190934925576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e64e5076768b2644991413e28c2fd5fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Costs:
+  - Type: 0
+    Value: 40
+  - Type: 1
+    Value: 75
+  Damages: 20
 --- !u!1 &8706582217415352615
 GameObject:
   m_ObjectHideFlags: 0

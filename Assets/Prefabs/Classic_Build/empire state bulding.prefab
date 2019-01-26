@@ -9,7 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 279454265528702164}
-  m_Layer: 0
+  - component: {fileID: 5933568282432256711}
+  - component: {fileID: 726455795407331567}
+  m_Layer: 9
   m_Name: empire state bulding
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,6 +33,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5933568282432256711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665993297245003768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37e5332c5f5b5dd408caff59a3199375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Costs:
+  - Type: 0
+    Value: 5
+  - Type: 1
+    Value: 10
+  Outcome: 25
+--- !u!65 &726455795407331567
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665993297245003768}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.54, y: 2.7385674, z: 1.54}
+  m_Center: {x: 0, y: 0.8692832, z: 0}
 --- !u!1 &8836841854234968043
 GameObject:
   m_ObjectHideFlags: 0
@@ -42,7 +75,7 @@ GameObject:
   - component: {fileID: 5480429168239309035}
   - component: {fileID: 5872526263488782246}
   - component: {fileID: 8249916625213403513}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Box001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
