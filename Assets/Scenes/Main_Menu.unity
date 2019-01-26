@@ -444,10 +444,10 @@ RectTransform:
   m_Father: {fileID: 1183142621}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.33600003, y: 0.5464085}
-  m_AnchorMax: {x: 0.665731, y: 0.66466224}
-  m_AnchoredPosition: {x: -2, y: 2.5}
-  m_SizeDelta: {x: -286, y: -54}
+  m_AnchorMin: {x: 0.33600003, y: 0.36200002}
+  m_AnchorMax: {x: 0.665731, y: 0.476}
+  m_AnchoredPosition: {x: -2, y: 0.5}
+  m_SizeDelta: {x: -286, y: -51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1104275165
 MonoBehaviour:
@@ -488,7 +488,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1104275166}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1183142622}
+        m_MethodName: OnClickPlay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1104275166
@@ -754,10 +765,10 @@ RectTransform:
   m_Father: {fileID: 1183142621}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.33600003, y: 0.32414082}
-  m_AnchorMax: {x: 0.665731, y: 0.44259158}
-  m_AnchoredPosition: {x: -2, y: 0.5}
-  m_SizeDelta: {x: -286, y: -54}
+  m_AnchorMin: {x: 0.33600003, y: 0.13514085}
+  m_AnchorMax: {x: 0.665731, y: 0.25536618}
+  m_AnchoredPosition: {x: -2, y: -0.5}
+  m_SizeDelta: {x: -286, y: -55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1975251194
 MonoBehaviour:
@@ -799,12 +810,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1183142617}
-        m_MethodName: 
+      - m_Target: {fileID: 1183142622}
+        m_MethodName: OnClickQuit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
