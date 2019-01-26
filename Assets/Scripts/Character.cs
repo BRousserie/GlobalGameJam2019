@@ -4,17 +4,12 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    private Resource[] m_resources = new Resource[Resource.NB_RESOURCE_TYPES]; // resources owned by the player
-    public Resource[] Resources { get { return m_resources; } }
-    private int m_money; // money possessed by the player
-    public int Money { get { return m_money; } }
-
-    public Character(Resource[] resources = null, int money = 0)
-    {
-        m_resources = resources;
-        money = 0;
-    }
-
+    public Resource[] Resources = new Resource[Resource.NB_RESOURCE_TYPES];
+    public int Money;
+    public GameObject Mesh;
+    public GameObject Orientation;
+    private float rotation;
+    
     #region get/set/add resources and money
     /**
      * Used to set the whole resources' array 
@@ -22,7 +17,7 @@ public class Character : MonoBehaviour
     public void setResources(Resource[] resources)
     {
         if (resources.Length == Resource.NB_RESOURCE_TYPES)
-            m_resources = resources;
+            Resources = resources;
         else
             throw new System.Exception(
                 "Assigning " + resources.Length + " resources " +
@@ -35,7 +30,7 @@ public class Character : MonoBehaviour
      */
     public void setResources(Resource resource)
     {
-        m_resources[(int)resource.Type].Value = resource.Value;
+        Resources[(int)resource.Type].Value = resource.Value;
     }
 
     /**
@@ -43,7 +38,7 @@ public class Character : MonoBehaviour
      */
     public void setResources(ResourceType type, int value)
     {
-        m_resources[(int)type].Value = value;
+        Resources[(int)type].Value = value;
     }
 
     /**
@@ -52,7 +47,7 @@ public class Character : MonoBehaviour
      */
     public void addResources(Resource resource)
     {
-        m_resources[(int)resource.Type].Value += resource.Value;
+        Resources[(int)resource.Type].Value += resource.Value;
     }
 
     /**
@@ -60,7 +55,7 @@ public class Character : MonoBehaviour
      */
     public void addMoney(int amount)
     {
-        m_money += amount;
+        Money += amount;
     }
     #endregion
 
@@ -68,7 +63,67 @@ public class Character : MonoBehaviour
     public bool canBuy(Building building)
     {
         for (int i = 0; i < Resource.NB_RESOURCE_TYPES; i++)
-            if (m_resources[i].Value < building.Costs[i].Value) return false;
-        return m_money > building.Price;
+            if (Resources[i].Value < building.Costs[i].Value) return false;
+        return Money > building.Price;
     }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.Rotate(0, .5f, 0);
+            transform.Rotate(0, 0, .5f);
+            rotation = -45;
+        }
+
+
+        else if (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.Rotate(0, -.5f, 0);
+            transform.Rotate(0, 0, .5f);
+            rotation = 45;
+        }
+
+        else if (Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.Rotate(0, .5f, 0);
+            transform.Rotate(0, 0, -.5f);
+            rotation = -135;
+        }
+
+
+        else if (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.Rotate(0, -.5f, 0);
+            transform.Rotate(0, 0, -.5f);
+            rotation = 135;
+        }
+        
+        else if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            transform.Rotate(0, .5f, 0);
+            rotation = -90;
+        }
+        else if (Input.GetKey(KeyCode.RightArrow))
+        {
+            transform.Rotate(0, -.5f, 0);
+            rotation = 90;
+        }
+
+
+        else if (Input.GetKey(KeyCode.UpArrow))
+        {
+            transform.Rotate(0, 0, .5f);
+            rotation = 0;
+        }
+        else if (Input.GetKey(KeyCode.DownArrow))
+        {
+            transform.Rotate(0, 0, -.5f);
+            rotation = 180;
+        }
+        Mesh.transform.localRotation = Quaternion.Euler(rotation, 0, 0);
+        //Mesh.transform.LookAt(Orientation.transform, Mesh.transform.up);
+    }
+
 }

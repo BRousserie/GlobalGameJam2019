@@ -1,4 +1,5 @@
-﻿public enum ResourceType { Wood = 0 }; //Si l'on ajoute un nouveau type, il faut mettre à jour NB_RESOURCE_TYPES
+﻿public enum ResourceType { Wood = 0 }; 
+//Si l'on ajoute un nouveau type, il faut mettre à jour NB_RESOURCE_TYPES ligne 5
 
 public class Resource
 {

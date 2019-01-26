@@ -4,15 +4,37 @@ using UnityEngine;
 
 public abstract class Building : MonoBehaviour
 {
-    private Resource[] m_costs; // building costs by resource type
-    public Resource[] Costs { get { return m_costs; } }
-    private int m_price; // building price
-    public int Price { get { return m_price; } }
+    public Resource[] Costs; // building costs by resource type
+    public int Price; // building price
+    private Camera cam;
 
-    public Building(Resource[] costs, int price)
+    protected void Start()
     {
-        m_costs = (costs != null) ? costs
-            : new Resource[Resource.NB_RESOURCE_TYPES];
-        m_price = price;
+        cam = Camera.main;
+        Debug.Log(Camera.main);
+    }
+
+    void OnMouseUp()
+    {
+        RaycastHit hit;
+        if (!Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hit))
+            return;
+
+        MeshCollider meshCollider = hit.collider as MeshCollider;
+        if (meshCollider == null || meshCollider.sharedMesh == null)
+            return;
+
+        Mesh mesh = meshCollider.sharedMesh;
+        Vector3[] vertices = mesh.vertices;
+        Vector3[] normals = mesh.normals;
+        int[] triangles = mesh.triangles;
+        Vector3 p0 = vertices[triangles[hit.triangleIndex * 3]];
+        Vector3 normal = normals[triangles[hit.triangleIndex * 3]];
+        Transform hitTransform = hit.collider.transform;
+
+        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+        cube.transform.position = p0;
+        cube.transform.localScale = new Vector3(0.1f, 0.3f, 0.1f);
+        cube.transform.rotation = Quaternion.FromToRotation(transform.up, normal) * transform.rotation;
     }
 }
