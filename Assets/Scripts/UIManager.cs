@@ -8,7 +8,6 @@ public class UIManager : MonoBehaviour
     public GameObject groupMainMenu;
     public GameObject groupCredits;
     public GameObject planetMenu;
-    public GameObject planetCredit;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +39,6 @@ public class UIManager : MonoBehaviour
         groupMainMenu.SetActive(false);
         planetMenu.SetActive(false);
         groupCredits.SetActive(true);
-        planetCredit.SetActive(true);
 
     }
 
@@ -48,7 +46,6 @@ public class UIManager : MonoBehaviour
     {
         SoundManager.instance.PlaySound("Click_Sound");
         groupCredits.SetActive(false);
-        planetCredit.SetActive(false);
         planetMenu.SetActive(true);
         groupMainMenu.SetActive(true);
     }
