@@ -17,11 +17,15 @@ public class UIManager : MonoBehaviour
 
     public void OnClickPlay()
     {
+        SoundManager.instance.PlaySound("Click_Sound");
         SceneManager.LoadScene("Game");
+        SoundManager.instance.StopAll();
+        SoundManager.instance.PlaySound("Music_Jeu_Calme");
     }
 
     public void OnClickQuit()
     {
+        SoundManager.instance.PlaySound("Click_Sound");
         Application.Quit();
         // Application.Quit ne fonctionne que sur une version Build (un .exe) du jeu. 
         // Pour faire ça dans UnityEditor, c'est avec :
@@ -32,6 +36,7 @@ public class UIManager : MonoBehaviour
 
     public void OnClickCredits()
     {
+        SoundManager.instance.PlaySound("Click_Sound");
         groupMainMenu.SetActive(false);
         planetMenu.SetActive(false);
         groupCredits.SetActive(true);
@@ -41,6 +46,7 @@ public class UIManager : MonoBehaviour
 
     public void OnClickBack()
     {
+        SoundManager.instance.PlaySound("Click_Sound");
         groupCredits.SetActive(false);
         planetCredit.SetActive(false);
         planetMenu.SetActive(true);
