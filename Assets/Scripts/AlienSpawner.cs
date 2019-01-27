@@ -6,17 +6,27 @@ public class AlienSpawner : MonoBehaviour
 {
     public bool started = true;
     public Transform planete;
-    private WaitForSeconds wfs = new WaitForSeconds(1f);
+    private WaitForSeconds wfss = new WaitForSeconds(1f);
+    private WaitForSeconds wfsc = new WaitForSeconds(20f);
+    public PlayTheme soundPlayer;
 
     public GameObject[] alienPrefabs;
 
     int nbAliens = 0;
 
+    IEnumerator calm()
+    {
+        yield return wfsc;
+        StartCoroutine(spawner());
+    }
+
     IEnumerator spawner()
     {
+        soundPlayer.MusicName = "Attaque";
+        soundPlayer.Play();
         while (started)
         {
-            yield return wfs;
+            yield return wfss;
             int numPrefabAlien = Random.Range(0, alienPrefabs.Length);
             GameObject alien = Instantiate(alienPrefabs[numPrefabAlien], transform.position, Quaternion.identity);
             nbAliens++;
@@ -37,6 +47,6 @@ public class AlienSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(spawner());
+        StartCoroutine(calm());
     }
 }

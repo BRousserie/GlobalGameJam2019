@@ -10,8 +10,6 @@ public class SoundManager : MonoBehaviour
     void Awake()
     {
 
-        print("ici");
-
         if (instance == null)
         {
             DontDestroyOnLoad(gameObject);
@@ -21,10 +19,6 @@ public class SoundManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-
-        if (SoundManager.instance == null)
-            print("null");
     }
 
 
