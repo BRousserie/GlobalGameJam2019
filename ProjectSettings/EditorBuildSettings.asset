@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NicoScene.unity
     guid: f1a863028ab4ff24494360706c066935
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: e956a11b4eea79d478c75b4bd4ac5602
   m_configObjects: {}

@@ -6,7 +6,7 @@ public class AlienSpawner : MonoBehaviour
 {
     public bool started = true;
     public Transform planete;
-    private WaitForSeconds wfs = new WaitForSeconds(5f);
+    private WaitForSeconds wfs = new WaitForSeconds(1f);
 
     public GameObject[] alienPrefabs;
 

@@ -72,7 +72,6 @@ public class Character : MonoBehaviour
 
     public Resource canBuy(Building building)
     {
-        print(building);
         for (int i = 0; i < Resource.NB_RESOURCE_TYPES; i++)
             if (Resources[i].Value < building.Costs[i].Value) return building.Costs[i];
         return null;

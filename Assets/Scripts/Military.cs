@@ -5,5 +5,11 @@ using UnityEngine;
 public class Military : Building
 {
     public int Damages; // damages inflicted by the building
-    
+    public Transform collision;
+
+    public void initMilitary()
+    {
+        collision.SetParent(null);
+        collision.gameObject.GetComponent<TirsMilitaires>().initBuilding();
+    }
 }

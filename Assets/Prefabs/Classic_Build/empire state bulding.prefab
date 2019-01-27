@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 726455795407331567}
   m_Layer: 9
   m_Name: empire state bulding
-  m_TagString: Untagged
+  m_TagString: building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50,6 +50,7 @@ MonoBehaviour:
     Value: 5
   - Type: 1
     Value: 10
+  Health: 20
   Outcome: 1
   Delay: 2
   Player: {fileID: 0}

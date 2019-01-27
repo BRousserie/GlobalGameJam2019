@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 3603098509711533728}
   m_Layer: 9
   m_Name: boutique test
-  m_TagString: Untagged
+  m_TagString: building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,6 +129,7 @@ MonoBehaviour:
     Value: 0
   - Type: 1
     Value: 5
+  Health: 20
   Outcome: 1
   Delay: 10
   Player: {fileID: 0}

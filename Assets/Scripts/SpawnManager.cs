@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class SpawnManager : MonoBehaviour
 {
     Camera cam;
-    bool readyClick = true;
     public GameObject batimentPrefab;
     public Character Player;
     public Text Warning;
@@ -69,6 +68,9 @@ public class SpawnManager : MonoBehaviour
 
         Commercial com = batiment.GetComponent<Commercial>();
         if (com != null) com.Player = Player;
+
+        Military mil = batiment.GetComponent<Military>();
+        if (mil != null) mil.initMilitary();
     }
     
     void afficherMessage(Resource res)

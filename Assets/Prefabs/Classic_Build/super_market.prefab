@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3591779312297022480}
   m_Layer: 9
   m_Name: super_market
-  m_TagString: Untagged
+  m_TagString: building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50,6 +50,7 @@ MonoBehaviour:
     Value: 5
   - Type: 1
     Value: 5
+  Health: 20
   Outcome: 5
   Delay: 5
   Player: {fileID: 0}

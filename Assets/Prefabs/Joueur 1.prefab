@@ -46,8 +46,9 @@ MonoBehaviour:
   started: 1
   planete: {fileID: 0}
   alienPrefabs:
-  - {fileID: 4434167262948346408, guid: 2740e20dd7859e04489905c5fe3b310c, type: 3}
-  - {fileID: 4434167262948346408, guid: e802ffdc88b7e8340a49189494ac5bd3, type: 3}
+  - {fileID: 1287100716641002664, guid: 904f36035859995438ef78446e7284b5, type: 3}
+  - {fileID: 1287100716641002664, guid: 864fde75a575ba749b4573d86d76e741, type: 3}
+  - {fileID: 1287100716641002664, guid: df9feb28819003a42bbbc3567c06f559, type: 3}
 --- !u!1 &4951022905127180071
 GameObject:
   m_ObjectHideFlags: 0

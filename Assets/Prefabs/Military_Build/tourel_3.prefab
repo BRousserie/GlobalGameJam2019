@@ -1,5 +1,64 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &287637501967402488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6733079766533475023}
+  - component: {fileID: 7053391389331002516}
+  - component: {fileID: 8891923497197461877}
+  m_Layer: 10
+  m_Name: Collision
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6733079766533475023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287637501967402488}
+  m_LocalRotation: {x: -0, y: 0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.010399967, y: 0.6307006, z: -0.30945003}
+  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_Children: []
+  m_Father: {fileID: 6874593595212203855}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &7053391389331002516
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287637501967402488}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 50
+  m_Center: {x: 0, y: 100, z: 0}
+--- !u!114 &8891923497197461877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287637501967402488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8b795bbab67ed4b886540f1d085d75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectile: {fileID: 5569892163921489621, guid: 8596d59beef45eb4babad063374489b8,
+    type: 3}
 --- !u!1 &3614600761175521153
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +70,7 @@ GameObject:
   - component: {fileID: 2488544234609186858}
   - component: {fileID: 1787155737160935691}
   - component: {fileID: 9046061999137897894}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +148,7 @@ GameObject:
   - component: {fileID: 4139897676842139269}
   - component: {fileID: 2081267756891152121}
   - component: {fileID: 6112726480936918928}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Cylinder010
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,9 +224,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6874593595212203855}
   - component: {fileID: 8066052049051930503}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: tourel_3
-  m_TagString: Untagged
+  m_TagString: building
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -185,6 +244,7 @@ Transform:
   m_Children:
   - {fileID: 2488544234609186858}
   - {fileID: 4139897676842139269}
+  - {fileID: 6733079766533475023}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -205,7 +265,9 @@ MonoBehaviour:
     Value: 40
   - Type: 1
     Value: 75
+  Health: 20
   Damages: 20
+  collision: {fileID: 6733079766533475023}
 --- !u!1 &8706582217415352615
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,7 +279,7 @@ GameObject:
   - component: {fileID: 8514948988768848142}
   - component: {fileID: 6621531949866218811}
   - component: {fileID: 7434602650663681489}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
