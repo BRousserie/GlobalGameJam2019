@@ -8,6 +8,7 @@ public class TirsMilitaires : MonoBehaviour
     public Military attachedBuilding;
     WaitForSeconds wfst;
     CollisionAliens target;
+    public GameObject shoot; 
 
     public void initBuilding()
     {
@@ -26,6 +27,12 @@ public class TirsMilitaires : MonoBehaviour
                 GameObject bullet = Instantiate(projectile, transform.position, rotation);
                 bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.up * (1f));
                 bullet.GetComponent<ProjectileMilitaire>().initProjectile(attachedBuilding.Damages);
+                ParticleSystem[] tirs = shoot.GetComponentsInChildren<ParticleSystem>();
+                print(tirs.Length);
+                foreach (ParticleSystem particle in tirs)
+                {
+                    particle.Play();
+                }
             }
             yield return wfst;
         }

@@ -17,7 +17,6 @@ public class BuildingSelectionUI : MonoBehaviour
 
     public void mouseHover()
     {
-        print("entered");
         Building building = BuildingPrefab.GetComponent<Building>();
         DescriptionText.text = "Costs : \n"
             + "  Money = " + building.Costs[(int)ResourceType.Money].Value + "\n"

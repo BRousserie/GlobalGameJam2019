@@ -11,11 +11,11 @@ public class ProjectileAlien : MonoBehaviour
         if (target == null)
             return;
         target.Health -= 5;
-        print(target.Health);
         if (target.Health <= 0)
         {
             //explosion
             Explosions.instance.spawnParticleBatiment(transform.position);
+            Destroy(other.GetComponent<Military>().collision.gameObject);
             Destroy(other.gameObject);
         }
         Destroy(this.gameObject);
