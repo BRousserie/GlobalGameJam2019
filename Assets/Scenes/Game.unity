@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 2d056ac30ecc9e542b26e06133f23602, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.43667555, g: 0.48427123, b: 0.5645229, a: 1}
+  m_IndirectSpecularColor: {r: 0.016215177, g: 0.014748086, b: 0.013871239, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2060,6 +2060,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Joueur 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2384910273049887716, guid: 9a3a82a609f585e43add3f8b4ff0f14f,
+        type: 3}
+      propertyPath: DescriptionText
+      value: 
+      objectReference: {fileID: 1221850429}
+    - target: {fileID: 2384910273049887716, guid: 9a3a82a609f585e43add3f8b4ff0f14f,
+        type: 3}
+      propertyPath: DescriptionPanel
+      value: 
+      objectReference: {fileID: 1314525430}
     - target: {fileID: 6428115032050271009, guid: 9a3a82a609f585e43add3f8b4ff0f14f,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -2340,16 +2350,6 @@ PrefabInstance:
       propertyPath: DescriptionPanel
       value: 
       objectReference: {fileID: 1314525430}
-    - target: {fileID: 2384910273049887716, guid: 9a3a82a609f585e43add3f8b4ff0f14f,
-        type: 3}
-      propertyPath: DescriptionText
-      value: 
-      objectReference: {fileID: 1221850429}
-    - target: {fileID: 2384910273049887716, guid: 9a3a82a609f585e43add3f8b4ff0f14f,
-        type: 3}
-      propertyPath: DescriptionPanel
-      value: 
-      objectReference: {fileID: 1314525430}
     - target: {fileID: 5967066728267198576, guid: 9a3a82a609f585e43add3f8b4ff0f14f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
@@ -2365,6 +2365,15 @@ PrefabInstance:
       propertyPath: DescriptionPanel
       value: 
       objectReference: {fileID: 1314525430}
+    - target: {fileID: 1314525431, guid: 9a3a82a609f585e43add3f8b4ff0f14f, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7852196416290099838, guid: 9a3a82a609f585e43add3f8b4ff0f14f,
+        type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a3a82a609f585e43add3f8b4ff0f14f, type: 3}
 --- !u!1 &382392997

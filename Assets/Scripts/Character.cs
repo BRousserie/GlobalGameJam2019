@@ -85,59 +85,60 @@ public class Character : MonoBehaviour
         
         if (Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.UpArrow))
         {
-            globalRotation.y = 0.5f;
-            globalRotation.z = 0.5f;
+            globalRotation.y = 15f;
+            globalRotation.z = 15f;
             rotation = -45;
         }
 
         else if (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.UpArrow))
         {
-            globalRotation.y = -0.5f;
-            globalRotation.z = 0.5f;
+            globalRotation.y = -15f;
+            globalRotation.z = 15f;
             rotation = 45;
         }
 
         else if (Input.GetKey(KeyCode.LeftArrow) && Input.GetKey(KeyCode.DownArrow))
         {
-            globalRotation.y = 0.5f;
-            globalRotation.z = -0.5f;
+            globalRotation.y = 15f;
+            globalRotation.z = -15f;
             rotation = -135;
         }
 
 
         else if (Input.GetKey(KeyCode.RightArrow) && Input.GetKey(KeyCode.DownArrow))
         {
-            globalRotation.y = -0.5f;
-            globalRotation.z = -0.5f;
+            globalRotation.y = -15f;
+            globalRotation.z = -15f;
             rotation = 135;
         }
         
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
-            globalRotation.y = 0.5f;
+            globalRotation.y = 15f;
             rotation = -90;
         }
         else if (Input.GetKey(KeyCode.RightArrow))
         {
-            globalRotation.y = -0.5f;
+            globalRotation.y = -15f;
             rotation = 90;
         }
         
         else if (Input.GetKey(KeyCode.UpArrow))
         {
-            globalRotation.z = 0.5f;
+            globalRotation.z = 15f;
             rotation = 0;
         }
         else if (Input.GetKey(KeyCode.DownArrow))
         {
-            globalRotation.z = -0.5f;
+            globalRotation.z = -15f;
             rotation = 180;
         }
         Mesh.transform.localRotation = Quaternion.Euler(rotation, 0, 0);
 
         if (!FoundObstacle())
         {
-            transform.Rotate(globalRotation);
+            // Ajout de Time deltaTime pour que ça soit une rotation par seconde...
+            transform.Rotate(globalRotation * Time.deltaTime);
         }
         //Mesh.transform.LookAt(Orientation.transform, Mesh.transform.up);
     }
