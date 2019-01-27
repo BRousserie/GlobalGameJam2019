@@ -23,6 +23,11 @@ public class UIManager : MonoBehaviour
     public void OnClickQuit()
     {
         Application.Quit();
+        // Application.Quit ne fonctionne que sur une version Build (un .exe) du jeu. 
+        // Pour faire ça dans UnityEditor, c'est avec :
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 
     public void OnClickCredits()

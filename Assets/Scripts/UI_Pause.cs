@@ -47,6 +47,7 @@ public class UI_Pause : MonoBehaviour
         resumeButton.SetActive(false);
         quitButton.SetActive(false);
         paused = false;
+        Building.selectedBuilding = null; //sinon on pose un bâtiment en dessous de nous
     }
 
     public void OnClickPause()
