@@ -6,6 +6,7 @@ public class AlienManager : MonoBehaviour
 {
     public Transform pivot;
     public Transform collision;
+    public int Health = 20;
     WaitForSeconds wfsg = new WaitForSeconds(1f);
     WaitForSeconds wfsd = new WaitForSeconds(0.1f);
     WaitForSeconds wfst = new WaitForSeconds(5f);
@@ -54,6 +55,7 @@ public class AlienManager : MonoBehaviour
             yield return wfst;
             if (target != null)
             {
+                print("targetspotted");
                 Vector3 direction = (transform.position - target.transform.position).normalized;
                 Quaternion rotation = Quaternion.FromToRotation(Vector3.up, direction);
                 GameObject bullet = Instantiate(projectile, transform.position, rotation);
@@ -64,6 +66,7 @@ public class AlienManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        print(other.tag);
         if (other.CompareTag("building"))
         {
             Building newTarget = other.GetComponent<Building>();

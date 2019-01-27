@@ -5,6 +5,7 @@ using UnityEngine;
 public class Military : Building
 {
     public int Damages; // damages inflicted by the building
+    public int ShootingRate = 2;
     public Transform collision;
 
     public void initMilitary()

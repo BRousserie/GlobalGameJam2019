@@ -87,6 +87,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4442392520486364808}
   - component: {fileID: 636061401990211856}
+  - component: {fileID: 3846916893449447579}
   m_Layer: 9
   m_Name: canon_1
   m_TagString: building
@@ -128,10 +129,24 @@ MonoBehaviour:
   - Type: 0
     Value: 50
   - Type: 1
-    Value: 100
+    Value: 75
   Health: 20
-  Damages: 30
+  Damages: 20
+  ShootingRate: 5
   collision: {fileID: 5438416208494961155}
+--- !u!65 &3846916893449447579
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5174981470435976826}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.836175, y: 3.0320976, z: 1.4933178}
+  m_Center: {x: -0.00000014901161, y: 1.0160483, z: -0.020902753}
 --- !u!1 &7031643672256682160
 GameObject:
   m_ObjectHideFlags: 0
@@ -345,3 +360,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 5569892163921489621, guid: 8596d59beef45eb4babad063374489b8,
     type: 3}
+  attachedBuilding: {fileID: 636061401990211856}

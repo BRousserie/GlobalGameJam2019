@@ -51,6 +51,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pivot: {fileID: 0}
   collision: {fileID: 2086331756712431272}
+  Health: 30
   projectile: {fileID: 5569892163921489621, guid: 8596d59beef45eb4babad063374489b8,
     type: 3}
 --- !u!135 &3123333211129472884

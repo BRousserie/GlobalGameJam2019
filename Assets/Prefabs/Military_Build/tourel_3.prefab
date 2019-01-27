@@ -59,6 +59,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectile: {fileID: 5569892163921489621, guid: 8596d59beef45eb4babad063374489b8,
     type: 3}
+  attachedBuilding: {fileID: 8066052049051930503}
 --- !u!1 &3614600761175521153
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,6 +225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6874593595212203855}
   - component: {fileID: 8066052049051930503}
+  - component: {fileID: 6937952533581251903}
   m_Layer: 9
   m_Name: tourel_3
   m_TagString: building
@@ -265,9 +267,23 @@ MonoBehaviour:
     Value: 40
   - Type: 1
     Value: 75
-  Health: 20
-  Damages: 20
+  Health: 10
+  Damages: 5
+  ShootingRate: 3
   collision: {fileID: 6733079766533475023}
+--- !u!65 &6937952533581251903
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7205215190934925576}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1.2}
+  m_Center: {x: 0, y: 0.6, z: -0.3}
 --- !u!1 &8706582217415352615
 GameObject:
   m_ObjectHideFlags: 0

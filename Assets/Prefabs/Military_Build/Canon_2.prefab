@@ -164,6 +164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 794311863490820169}
   - component: {fileID: 8863188281341335539}
+  - component: {fileID: 8460983363030957734}
   m_Layer: 9
   m_Name: Canon_2
   m_TagString: building
@@ -204,10 +205,24 @@ MonoBehaviour:
   - Type: 0
     Value: 20
   - Type: 1
-    Value: 30
-  Health: 20
-  Damages: 10
+    Value: 20
+  Health: 5
+  Damages: 5
+  ShootingRate: 2
   collision: {fileID: 787059132593515257}
+--- !u!65 &8460983363030957734
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5801649485598677223}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4821811, y: 1.3725947, z: 1}
+  m_Center: {x: -0.043834522, y: 0.55889183, z: 0}
 --- !u!1 &6879445497718219991
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,5 +280,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b8b795bbab67ed4b886540f1d085d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 5569892163921489621, guid: 8596d59beef45eb4babad063374489b8,
+  projectile: {fileID: 5569892163921489621, guid: 9ae7791e9033b784bb97aa7e2b2be7d4,
     type: 3}
+  attachedBuilding: {fileID: 8863188281341335539}
