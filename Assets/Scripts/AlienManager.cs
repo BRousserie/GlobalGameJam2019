@@ -14,6 +14,7 @@ public class AlienManager : MonoBehaviour
     public GameObject projectile;
     //List<Building> targets;
     Building target;
+    public ParticleSystem bzzz;
 
 
     public void initAlien()
@@ -55,11 +56,15 @@ public class AlienManager : MonoBehaviour
             yield return wfst;
             if (target != null)
             {
-                print("targetspotted");
                 Vector3 direction = (transform.position - target.transform.position).normalized;
                 Quaternion rotation = Quaternion.FromToRotation(Vector3.up, direction);
                 GameObject bullet = Instantiate(projectile, transform.position, rotation);
                 bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.up * (-300f));
+                ParticleSystem[] tir = bzzz.GetComponentsInChildren<ParticleSystem>();
+                foreach (ParticleSystem particle in tir)
+                {
+                    particle.Play();
+                }
             }
         }
     }

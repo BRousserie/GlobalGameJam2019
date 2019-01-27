@@ -240,9 +240,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7205215190934925576}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.022163235, y: 0.4698699, z: -0.15479834}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.1809728, y: 0.1809728, z: 0.1809728}
   m_Children:
   - {fileID: 2488544234609186858}
   - {fileID: 4139897676842139269}
@@ -264,9 +264,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Costs:
   - Type: 0
-    Value: 40
+    Value: 5
   - Type: 1
-    Value: 75
+    Value: 20
   Health: 10
   Damages: 5
   ShootingRate: 3
