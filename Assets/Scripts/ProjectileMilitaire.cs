@@ -19,9 +19,10 @@ public class ProjectileMilitaire : MonoBehaviour
         target.Health -= damage;
         if (target.Health <= 0)
         {
-            //explosion
+            // TODO son d'explosion
             Explosions.instance.spawnParticleAlien(transform.position);
             Destroy(other.transform.parent.gameObject);
+            Character.increaseScore();
         }
         Destroy(this.gameObject);
     }
