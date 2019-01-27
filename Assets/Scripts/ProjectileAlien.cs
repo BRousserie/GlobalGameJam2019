@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ProjectileAlien : MonoBehaviour
 {
+
     private void OnTriggerEnter(Collider other)
     {
         Building target = other.gameObject.GetComponent<Building>();
@@ -14,6 +15,7 @@ public class ProjectileAlien : MonoBehaviour
         if (target.Health <= 0)
         {
             //explosion
+            Explosions.instance.spawnParticleBatiment(transform.position);
             Destroy(other.gameObject);
         }
         Destroy(this.gameObject);

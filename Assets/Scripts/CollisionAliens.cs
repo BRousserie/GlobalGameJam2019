@@ -7,6 +7,7 @@ public class CollisionAliens : MonoBehaviour
     {
         if (other.CompareTag("alien"))
         {
+            Explosions.instance.spawnParticleAlien(transform.position);
             Destroy(other.transform.parent.gameObject);
             Destroy(this.transform.transform.parent.gameObject);
         }

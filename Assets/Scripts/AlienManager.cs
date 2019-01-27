@@ -66,7 +66,6 @@ public class AlienManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print(other.tag);
         if (other.CompareTag("building"))
         {
             Building newTarget = other.GetComponent<Building>();
