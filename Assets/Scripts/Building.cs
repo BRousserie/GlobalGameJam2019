@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Building : MonoBehaviour
 {
-    public static GameObject selectedBuilding;
+    public static GameObject selectedBuilding;  
 
     public Resource[] Costs = Resource.resourcesList(); // building costs by resource type
     public int Health = 20;

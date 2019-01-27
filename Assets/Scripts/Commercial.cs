@@ -11,7 +11,7 @@ public class Commercial : Building
 
     private void Start()
     {
-        wfs = new WaitForSeconds(Delay);
+        wfs = new WaitForSeconds(Delay);    
         StartCoroutine(outcome());
     }
 
