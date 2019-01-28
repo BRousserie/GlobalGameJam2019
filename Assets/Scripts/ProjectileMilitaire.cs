@@ -13,15 +13,17 @@ public class ProjectileMilitaire : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        AlienManager target = other.gameObject.GetComponent<AlienManager>();
-        if (target == null)
+        CollisionAliens targetCollider = other.gameObject.GetComponent<CollisionAliens>();
+        if (targetCollider == null)
             return;
-        target.Health -= damage;
-        if (target.Health <= 0)
+
+        targetCollider.alienManager.Health -= damage;
+        if (targetCollider.alienManager.Health <= 0)
         {
             //explosion
             Explosions.instance.spawnParticleAlien(transform.position);
-            Destroy(other.transform.parent.gameObject);
+            Destroy(targetCollider.alienManager.gameObject);
+            Destroy(targetCollider.gameObject.transform.parent.gameObject);
         }
         Destroy(this.gameObject);
     }

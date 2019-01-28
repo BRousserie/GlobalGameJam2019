@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 809171119953068208}
   - component: {fileID: 4162055454529184529}
   - component: {fileID: 3737434715361687901}
-  m_Layer: 9
+  m_Layer: 14
   m_Name: projectileAlien
   m_TagString: projectile
   m_Icon: {fileID: 0}
@@ -121,4 +121,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 966fc34584e1bdd46ab2e40271bc27af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  explosionFX: {fileID: 0}

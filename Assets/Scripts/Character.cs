@@ -147,8 +147,8 @@ public class Character : MonoBehaviour
     {
         for (int i = 0; i < raycastOrigins.Length; i++)
         {
-            Vector3 fwd = raycastOrigins[i].transform.TransformDirection(Vector3.up) * 0.02f;
-            Debug.DrawRay(raycastOrigins[i].transform.position, fwd, Color.green);
+            Vector3 fwd = raycastOrigins[i].transform.TransformDirection(Vector3.up);
+            Debug.DrawRay(raycastOrigins[i].transform.position, fwd * 0.02f, Color.green);
 
             if (Physics.Raycast(raycastOrigins[i].transform.position, fwd, 0.02f, collisionLayer))
             {

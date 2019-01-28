@@ -16,11 +16,14 @@ public class AlienManager : MonoBehaviour
     Building target;
     public ParticleSystem bzzz;
 
+    public Transform buildingOverlapCenter;
+    public LayerMask buildingOverlapLayeMask;
+
 
     public void initAlien()
     {
-        rotation.y = Random.Range(-90f, 90f);
-        rotation.z = Random.Range(-90f, 90f);
+        rotation.y = Random.Range(0f, 360f);
+        rotation.z = Random.Range(0f, 360f);
         pivot.Rotate(rotation);
         collision.SetParent(pivot.transform);
         rotation = Vector3.zero;
@@ -34,8 +37,8 @@ public class AlienManager : MonoBehaviour
         while (true)
         {
             yield return wfsg;
-            rotation.y = Random.Range(-1.5f, 1.5f);
-            rotation.z = Random.Range(-1.5f, 1.5f);
+            rotation.y = Random.Range(-50f, 50f);
+            rotation.z = Random.Range(-50f, 50f);
             wfsg = new WaitForSeconds(Random.Range(2f, 5f));
         }
     }
@@ -45,7 +48,7 @@ public class AlienManager : MonoBehaviour
         while (true)
         {
             yield return wfsd;
-            pivot.Rotate(rotation);
+            pivot.Rotate(rotation * Time.deltaTime);
         }
     }
 
@@ -54,6 +57,7 @@ public class AlienManager : MonoBehaviour
         while (true)
         {
             yield return wfst;
+            FindTarget();
             if (target != null)
             {
                 Vector3 direction = (transform.position - target.transform.position).normalized;
@@ -69,7 +73,24 @@ public class AlienManager : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void FindTarget()
+    {
+        target = null;
+        Collider[] colliders = Physics.OverlapSphere(buildingOverlapCenter.position, .4f, buildingOverlapLayeMask);
+
+        if (colliders.Length > 0)
+        {
+            target = colliders[0].GetComponent<Building>();
+            //LookAtTarget();
+        }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawSphere(buildingOverlapCenter.position, .4f);
+    }
+
+    /*private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("building"))
         {
@@ -84,5 +105,5 @@ public class AlienManager : MonoBehaviour
             return;
         if (other.GetComponent<Building>().Equals(target))
             target = null;
-    }
+    }*/
 }

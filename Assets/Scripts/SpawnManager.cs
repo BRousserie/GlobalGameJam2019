@@ -11,6 +11,8 @@ public class SpawnManager : MonoBehaviour
     public Character Player;
     public Text Warning;
 
+    public LayerMask layerMask;
+
     //GameObject cube;
     void Start()
     {
@@ -46,8 +48,10 @@ public class SpawnManager : MonoBehaviour
             return;
         }
         RaycastHit hit;
-        if (!Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hit))
+        if (!Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hit, 100f, layerMask))
             return;
+
+        print(hit.collider.gameObject.name);
 
         MeshCollider meshCollider = hit.collider as MeshCollider;
         if (meshCollider == null || meshCollider.sharedMesh == null)

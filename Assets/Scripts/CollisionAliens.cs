@@ -3,6 +3,8 @@
 public class CollisionAliens : MonoBehaviour
 {
 
+    public AlienManager alienManager;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("alien"))

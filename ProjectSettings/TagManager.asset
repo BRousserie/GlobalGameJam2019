@@ -19,10 +19,10 @@ TagManager:
   - PostProcessing
   - MovementPlayer
   - CollisionAlien
-  - 
-  - 
-  - 
-  - 
+  - ClickSpawn
+  - BuildingDetectionPlayer
+  - BuildingDetectionAlien
+  - Building
   - 
   - 
   - 

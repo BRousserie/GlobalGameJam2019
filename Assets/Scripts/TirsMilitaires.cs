@@ -8,7 +8,10 @@ public class TirsMilitaires : MonoBehaviour
     public Military attachedBuilding;
     WaitForSeconds wfst;
     CollisionAliens target;
-    public GameObject shoot; 
+    public GameObject shoot;
+
+    public Transform alienOverlapCenter;
+    public LayerMask alienOverlapLayeMask;
 
     public void initBuilding()
     {
@@ -20,25 +23,57 @@ public class TirsMilitaires : MonoBehaviour
     {
         while (true)
         {
+            FindTarget();
             if (target != null)
             {
-                Vector3 direction = (transform.position - target.transform.position).normalized;
-                Quaternion rotation = Quaternion.FromToRotation(Vector3.up, direction);
-                GameObject bullet = Instantiate(projectile, transform.position, rotation);
-                bullet.GetComponent<Rigidbody>().AddForce(bullet.transform.up * (1f));
-                bullet.GetComponent<ProjectileMilitaire>().initProjectile(attachedBuilding.Damages);
+                Vector3 direction = (target.transform.position - shoot.transform.position).normalized;
+                Quaternion rotation = Quaternion.FromToRotation(Vector3.forward, direction);
+                GameObject bullet = Instantiate(projectile, shoot.transform.position, rotation);
+
                 ParticleSystem[] tirs = shoot.GetComponentsInChildren<ParticleSystem>();
-                print(tirs.Length);
+
                 foreach (ParticleSystem particle in tirs)
                 {
                     particle.Play();
                 }
+
+                ProjectileMilitaire projectileMilitaire = bullet.GetComponent<ProjectileMilitaire>();
+                if (projectileMilitaire != null)
+                    projectileMilitaire.initProjectile(attachedBuilding.Damages);
+                bullet.GetComponent<Rigidbody>().AddForce(direction * (1000f));
+
+                // détruit le projectile après 4 secondes
+                Destroy(bullet, 10f);
             }
             yield return wfst;
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void FindTarget()
+    {
+        target = null;
+        Collider[] colliders = Physics.OverlapSphere(alienOverlapCenter.position, 3.5f, alienOverlapLayeMask);
+        
+        if (colliders.Length > 0) {
+            target = colliders[0].GetComponent<CollisionAliens>();
+            LookAtTarget();
+        }
+    }
+
+    public Transform verticalRotation;
+
+    private void LookAtTarget()
+    {
+        if(target!=null)
+            verticalRotation.LookAt(target.transform);
+    }
+
+    /*private void OnDrawGizmos()
+    {
+        Gizmos.DrawSphere(alienOverlapCenter.position, 3.5f);
+    }*/
+
+    /*private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("alien"))
         {
@@ -54,5 +89,5 @@ public class TirsMilitaires : MonoBehaviour
             return;
         if (other.gameObject.Equals(target.gameObject))
             target = null;
-    }
+    }*/
 }
