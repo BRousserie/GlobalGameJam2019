@@ -22,9 +22,14 @@ public class ProjectileAlien : MonoBehaviour
         {
             //explosion
             Explosions.instance.spawnParticleBatiment(transform.position);
-            Military military = other.GetComponent<Military>();
+
+            /*Military military = other.GetComponent<Military>();
             if(military!=null)
-                Destroy(military.collision.gameObject);
+                Destroy(military.collision.gameObject);*/
+
+            GameObject militaryCollisionObject = other.GetComponent<Military>().collision.gameObject;
+            if (militaryCollisionObject != null) Destroy(militaryCollisionObject);
+
             Destroy(other.gameObject);
         }
         Destroy(this.gameObject);

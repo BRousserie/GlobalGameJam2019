@@ -7,6 +7,7 @@ public class StatsUI : MonoBehaviour
 {
     public Text MoneyAmount;
     public Text WoodAmount;
+    public Text Score;
     public Character Player;
 
     private void Start()
@@ -18,5 +19,6 @@ public class StatsUI : MonoBehaviour
     {
         MoneyAmount.text = ""+ Player.Resources[(int)ResourceType.Money].Value;
         WoodAmount.text = "" + Player.Resources[(int)ResourceType.Wood].Value;
+        Score.text = "" + Character.instance.score;
     }
 }

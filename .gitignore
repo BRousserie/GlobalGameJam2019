@@ -35,3 +35,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Assets/Scripts/Personnage.cs.meta
+Assets/Scripts/Personnage.cs
+Assets/Scripts/Arbre.cs.meta
+Assets/Scripts/Arbre.cs

@@ -20,10 +20,14 @@ public class ProjectileMilitaire : MonoBehaviour
         targetCollider.alienManager.Health -= damage;
         if (targetCollider.alienManager.Health <= 0)
         {
-            //explosion
+            // TODO son d'explosion
             Explosions.instance.spawnParticleAlien(transform.position);
+
             Destroy(targetCollider.alienManager.gameObject);
             Destroy(targetCollider.gameObject.transform.parent.gameObject);
+
+            //Destroy(other.transform.parent.gameObject);
+            Character.increaseScore();
         }
         Destroy(this.gameObject);
     }

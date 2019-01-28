@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Character : MonoBehaviour
 {
+    public static Character instance;
+
     public Resource[] Resources = Resource.resourcesList();
+    public int score = 0;
     public GameObject Mesh;
     public GameObject Orientation;
     private float rotation;
@@ -12,7 +16,12 @@ public class Character : MonoBehaviour
 
     public LayerMask collisionLayer;
     public Transform [] raycastOrigins;
-    
+
+    private void Start()
+    {
+        instance = this;
+    }
+
     #region get/set/add resources and money
     /**
      * Used to set the whole resources' array 
@@ -67,6 +76,13 @@ public class Character : MonoBehaviour
             Resources[i].Value -= costs[i].Value;
         stats.UpdateInfos();
     }
+
+    public static void increaseScore()
+    {
+        instance.score++;
+        instance.stats.UpdateInfos();
+    }
+
     #endregion
 
 
