@@ -8,7 +8,6 @@ public class AlienSpawner : MonoBehaviour
     public Transform planete;
     private WaitForSeconds wfss = new WaitForSeconds(1f);
     private WaitForSeconds wfsc = new WaitForSeconds(25f);
-    public PlayTheme soundPlayer;
 
     public GameObject[] alienPrefabs;
 
@@ -24,8 +23,9 @@ public class AlienSpawner : MonoBehaviour
 
     IEnumerator spawner()
     {
-        soundPlayer.MusicName = "Attaque";
-        soundPlayer.Play();
+        SoundManager.instance.StopAll();
+        SoundManager.instance.PlaySound("Attaque");
+
         while (started)
         {
             int numPrefabAlien = Random.Range(0, alienPrefabs.Length);

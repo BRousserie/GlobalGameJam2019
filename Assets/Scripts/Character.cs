@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
 public class Character : MonoBehaviour
 {
@@ -156,7 +153,6 @@ public class Character : MonoBehaviour
             // Ajout de Time deltaTime pour que ça soit une rotation par seconde...
             transform.Rotate(globalRotation * Time.deltaTime);
         }
-        //Mesh.transform.LookAt(Orientation.transform, Mesh.transform.up);
     }
 
     bool FoundObstacle ()

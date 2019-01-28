@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class AlienManager : MonoBehaviour
@@ -12,7 +11,6 @@ public class AlienManager : MonoBehaviour
     WaitForSeconds wfst = new WaitForSeconds(5f);
     Vector3 rotation = Vector3.zero;
     public GameObject projectile;
-    //List<Building> targets;
     Building target;
     public ParticleSystem bzzz;
 
@@ -81,7 +79,8 @@ public class AlienManager : MonoBehaviour
         if (colliders.Length > 0)
         {
             target = colliders[0].GetComponent<Building>();
-            //LookAtTarget();
+            // TODO LookAtTarget() -> rotation de l'arme de la soucoupe
+            // Mais nécessite d'être sûr que la soucoupe fait face à la caméra
         }
     }
 
@@ -89,21 +88,4 @@ public class AlienManager : MonoBehaviour
     {
         Gizmos.DrawSphere(buildingOverlapCenter.position, .4f);
     }
-
-    /*private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("building"))
-        {
-            Building newTarget = other.GetComponent<Building>();
-            target = newTarget;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (!other.CompareTag("building"))
-            return;
-        if (other.GetComponent<Building>().Equals(target))
-            target = null;
-    }*/
 }

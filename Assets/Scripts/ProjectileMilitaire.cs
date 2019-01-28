@@ -26,7 +26,6 @@ public class ProjectileMilitaire : MonoBehaviour
             Destroy(targetCollider.alienManager.gameObject);
             Destroy(targetCollider.gameObject.transform.parent.gameObject);
 
-            //Destroy(other.transform.parent.gameObject);
             Character.increaseScore();
         }
         Destroy(this.gameObject);

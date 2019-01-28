@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,30 +11,12 @@ public class SpawnManager : MonoBehaviour
 
     public LayerMask layerMask;
 
-    //GameObject cube;
     void Start()
     {
         cam = Camera.main;
-        //cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        //cube.transform.localScale = new Vector3(0.1f, 0.3f, 0.1f);
-
-        //wfs = new WaitForSeconds(0.1f);
-
-        //StartCoroutine(test());
     }
 
     WaitForSeconds wfs;
-    
-
-    /*IEnumerator test()
-    {
-
-        while (true)
-        {
-            OnMouseUp();
-            yield return wfs;
-        }
-    }*/
 
     void OnMouseUp ()
     {
@@ -50,8 +30,6 @@ public class SpawnManager : MonoBehaviour
         RaycastHit hit;
         if (!Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hit, 100f, layerMask))
             return;
-
-        print(hit.collider.gameObject.name);
 
         MeshCollider meshCollider = hit.collider as MeshCollider;
         if (meshCollider == null || meshCollider.sharedMesh == null)

@@ -67,27 +67,4 @@ public class TirsMilitaires : MonoBehaviour
         if(target!=null)
             verticalRotation.LookAt(target.transform);
     }
-
-    /*private void OnDrawGizmos()
-    {
-        Gizmos.DrawSphere(alienOverlapCenter.position, 3.5f);
-    }*/
-
-    /*private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("alien"))
-        {
-            CollisionAliens newTarget = other.GetComponent<CollisionAliens>();
-            target = newTarget;
-
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (!other.CompareTag("alien") || target == null)
-            return;
-        if (other.gameObject.Equals(target.gameObject))
-            target = null;
-    }*/
 }
