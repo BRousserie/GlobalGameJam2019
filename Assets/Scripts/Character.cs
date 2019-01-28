@@ -17,7 +17,7 @@ public class Character : MonoBehaviour
     public LayerMask collisionLayer;
     public Transform [] raycastOrigins;
 
-    private void Start()
+    private void Awake()
     {
         instance = this;
     }

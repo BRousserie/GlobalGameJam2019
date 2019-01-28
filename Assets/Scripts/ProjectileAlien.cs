@@ -17,18 +17,19 @@ public class ProjectileAlien : MonoBehaviour
         Building target = other.gameObject.GetComponent<Building>();
         if (target == null)
             return;
-        target.Health -= 1;
+        target.Health -= 3;
         if (target.Health <= 0)
         {
             //explosion
             Explosions.instance.spawnParticleBatiment(transform.position);
 
-            /*Military military = other.GetComponent<Military>();
+            Military military = other.GetComponent<Military>();
             if(military!=null)
-                Destroy(military.collision.gameObject);*/
+                Destroy(military.collision.gameObject);
 
-            GameObject militaryCollisionObject = other.GetComponent<Military>().collision.gameObject;
-            if (militaryCollisionObject != null) Destroy(militaryCollisionObject);
+            // Commenté car Plante si other.GetComponent<Military>() est null
+            /*GameObject militaryCollisionObject = other.GetComponent<Military>().collision.gameObject;
+            if (militaryCollisionObject != null) Destroy(militaryCollisionObject);*/
 
             Destroy(other.gameObject);
         }

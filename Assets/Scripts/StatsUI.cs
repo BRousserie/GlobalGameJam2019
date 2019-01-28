@@ -12,11 +12,14 @@ public class StatsUI : MonoBehaviour
 
     private void Start()
     {
+        //Player = GameObject.FindObjectOfType<Character>();
         UpdateInfos();
     }
 
     public void UpdateInfos()
     {
+        if (MoneyAmount == null)
+            print("ça");
         MoneyAmount.text = ""+ Player.Resources[(int)ResourceType.Money].Value;
         WoodAmount.text = "" + Player.Resources[(int)ResourceType.Wood].Value;
         Score.text = "" + Character.instance.score;
