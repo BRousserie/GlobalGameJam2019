@@ -7,8 +7,7 @@ public class UI_Pause : MonoBehaviour
 {
     public bool paused = false;
     public GameObject pauseButton;
-    public GameObject resumeButton;
-    public GameObject quitButton;
+    public GameObject pausePanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,22 +20,20 @@ public class UI_Pause : MonoBehaviour
         {
             Time.timeScale = 0;
             pauseButton.SetActive(false);
-            resumeButton.SetActive(true);
-            quitButton.SetActive(true);
+            pausePanel.SetActive(true);
             paused = true;
-        }
-        if (Input.GetKeyDown(KeyCode.Escape) && paused == true)
+        }else if (Input.GetKeyDown(KeyCode.Escape) && paused == true)
         {
             Time.timeScale = 1;
             pauseButton.SetActive(true);
-            resumeButton.SetActive(false);
-            quitButton.SetActive(false);
+            pausePanel.SetActive(false);
             paused = false;
         }
     }
     
     public void OnClickQuit()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Main_Menu");
     }
 
@@ -44,8 +41,7 @@ public class UI_Pause : MonoBehaviour
     {
         Time.timeScale = 1;
         pauseButton.SetActive(true);
-        resumeButton.SetActive(false);
-        quitButton.SetActive(false);
+        pausePanel.SetActive(false);
         paused = false;
         Building.selectedBuilding = null; //sinon on pose un bâtiment en dessous de nous
     }
@@ -54,8 +50,7 @@ public class UI_Pause : MonoBehaviour
     {
         Time.timeScale = 0;
         pauseButton.SetActive(false);
-        resumeButton.SetActive(true);
-        quitButton.SetActive(true);
+        pausePanel.SetActive(true);
         paused = true;
     }
 }

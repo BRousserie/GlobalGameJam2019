@@ -155,6 +155,26 @@ public class Character : MonoBehaviour
         }
     }
 
+    bool Left()
+    {
+        return (Input.GetKey(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A));
+    }
+
+    bool Right()
+    {
+        return (Input.GetKey(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.D));
+    }
+
+    bool Up()
+    {
+        return (Input.GetKey(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.S));
+    }
+
+    bool Down()
+    {
+        return (Input.GetKey(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.W));
+    }
+
     bool FoundObstacle ()
     {
         for (int i = 0; i < raycastOrigins.Length; i++)

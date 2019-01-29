@@ -20,16 +20,24 @@ public class SpawnManager : MonoBehaviour
 
     void OnMouseUp ()
     {
-        if (Building.selectedBuilding == null) return;
-
-        Resource tmp = Player.canBuy(Building.selectedBuilding.GetComponent<Building>());
-        if (tmp != null) {
-            afficherMessage(tmp);
-            return;
-        }
+        
         RaycastHit hit;
         if (!Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hit, 100f, layerMask))
             return;
+        
+        SpawnBuilding(hit);        
+    }
+
+    void SpawnBuilding(RaycastHit hit)
+    {
+        if (Building.selectedBuilding == null) return;
+
+        Resource tmp = Player.canBuy(Building.selectedBuilding.GetComponent<Building>());
+        if (tmp != null)
+        {
+            afficherMessage(tmp);
+            return;
+        }
 
         MeshCollider meshCollider = hit.collider as MeshCollider;
         if (meshCollider == null || meshCollider.sharedMesh == null)
@@ -44,7 +52,7 @@ public class SpawnManager : MonoBehaviour
         Transform hitTransform = hit.collider.transform;
 
         Quaternion rotation = Quaternion.FromToRotation(Vector3.up, normal);
-        
+
         GameObject batiment = Instantiate(Building.selectedBuilding, p0, rotation);
         Player.loseResources(Building.selectedBuilding.GetComponent<Building>().Costs);
 

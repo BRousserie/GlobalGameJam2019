@@ -183,7 +183,6 @@ GameObject:
   - component: {fileID: 7852196416205327448}
   - component: {fileID: 7852196416205327449}
   - component: {fileID: 1291910960}
-  - component: {fileID: 3373950170404588946}
   m_Layer: 0
   m_Name: Joueur 1
   m_TagString: Untagged
@@ -248,19 +247,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 4200684601400869666}
---- !u!114 &3373950170404588946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7852196416205327451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6bf36ddcf801884eba9cfdf81b35a90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  treeUi: {fileID: 0}
 --- !u!1 &7852196416290099824
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,7 +507,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e0e7a568e0b3a104f9336b78bc76c47b, type: 2}
+      objectReference: {fileID: 2100000, guid: 35bbc2b3158f9ae45a85b756372a2b85, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17d37af625a7071499a7507f9035aee6, type: 3}
 --- !u!4 &999061615953276788 stripped

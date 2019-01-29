@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 33606223}
   - component: {fileID: 33606224}
+  - component: {fileID: 33606225}
   m_Layer: 15
   m_Name: arbre(Clone) (10)
   m_TagString: Untagged
@@ -152,11 +153,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33606222}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &33606225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33606222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &33766468
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,6 +483,7 @@ GameObject:
   m_Component:
   - component: {fileID: 108266342}
   - component: {fileID: 108266343}
+  - component: {fileID: 108266344}
   m_Layer: 15
   m_Name: arbre(Clone) (15)
   m_TagString: Untagged
@@ -497,11 +514,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108266341}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &108266344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108266341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &118116339
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,6 +1026,7 @@ GameObject:
   m_Component:
   - component: {fileID: 174052109}
   - component: {fileID: 174052110}
+  - component: {fileID: 174052111}
   m_Layer: 15
   m_Name: arbre(Clone) (31)
   m_TagString: Untagged
@@ -1024,11 +1057,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 174052108}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &174052111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174052108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &182787498
 GameObject:
   m_ObjectHideFlags: 0
@@ -1116,6 +1164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 183759978}
   - component: {fileID: 183759979}
+  - component: {fileID: 183759980}
   m_Layer: 15
   m_Name: arbre(Clone) (22)
   m_TagString: Untagged
@@ -1146,11 +1195,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 183759977}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &183759980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183759977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &197411530
 GameObject:
   m_ObjectHideFlags: 0
@@ -1161,6 +1225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 197411531}
   - component: {fileID: 197411532}
+  - component: {fileID: 197411533}
   m_Layer: 15
   m_Name: arbre(Clone) (23)
   m_TagString: Untagged
@@ -1191,11 +1256,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 197411530}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &197411533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197411530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &205930978
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,6 +1286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 205930979}
   - component: {fileID: 205930980}
+  - component: {fileID: 205930981}
   m_Layer: 15
   m_Name: arbre2(Clone) (18)
   m_TagString: Untagged
@@ -1236,11 +1317,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205930978}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &205930981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205930978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &240560796
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,6 +1347,7 @@ GameObject:
   m_Component:
   - component: {fileID: 240560797}
   - component: {fileID: 240560798}
+  - component: {fileID: 240560799}
   m_Layer: 15
   m_Name: arbre(Clone) (16)
   m_TagString: Untagged
@@ -1281,11 +1378,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240560796}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &240560799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240560796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &243829680
 GameObject:
   m_ObjectHideFlags: 0
@@ -1373,6 +1485,7 @@ GameObject:
   m_Component:
   - component: {fileID: 245338923}
   - component: {fileID: 245338924}
+  - component: {fileID: 245338925}
   m_Layer: 15
   m_Name: arbre(Clone) (29)
   m_TagString: Untagged
@@ -1403,11 +1516,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 245338922}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &245338925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245338922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &253630697
 GameObject:
   m_ObjectHideFlags: 0
@@ -1572,6 +1700,7 @@ GameObject:
   m_Component:
   - component: {fileID: 278259049}
   - component: {fileID: 278259050}
+  - component: {fileID: 278259051}
   m_Layer: 15
   m_Name: arbre(Clone) (13)
   m_TagString: Untagged
@@ -1602,11 +1731,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278259048}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &278259051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278259048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &296688968
 GameObject:
   m_ObjectHideFlags: 0
@@ -1617,6 +1761,7 @@ GameObject:
   m_Component:
   - component: {fileID: 296688969}
   - component: {fileID: 296688970}
+  - component: {fileID: 296688971}
   m_Layer: 15
   m_Name: arbre2(Clone) (31)
   m_TagString: Untagged
@@ -1647,11 +1792,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 296688968}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &296688971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296688968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &301943078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1816,6 +1976,7 @@ GameObject:
   m_Component:
   - component: {fileID: 341598848}
   - component: {fileID: 341598849}
+  - component: {fileID: 341598850}
   m_Layer: 15
   m_Name: arbre3(Clone)
   m_TagString: Untagged
@@ -1846,11 +2007,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341598847}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &341598850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341598847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &350506523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1861,6 +2037,7 @@ GameObject:
   m_Component:
   - component: {fileID: 350506524}
   - component: {fileID: 350506525}
+  - component: {fileID: 350506526}
   m_Layer: 15
   m_Name: arbre(Clone) (14)
   m_TagString: Untagged
@@ -1891,11 +2068,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 350506523}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &350506526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350506523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &351429415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1906,6 +2098,7 @@ GameObject:
   m_Component:
   - component: {fileID: 351429416}
   - component: {fileID: 351429417}
+  - component: {fileID: 351429418}
   m_Layer: 15
   m_Name: arbre(Clone) (18)
   m_TagString: Untagged
@@ -1936,11 +2129,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 351429415}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &351429418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351429415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &357379073
 GameObject:
   m_ObjectHideFlags: 0
@@ -2028,6 +2236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 358452200}
   - component: {fileID: 358452201}
+  - component: {fileID: 358452202}
   m_Layer: 15
   m_Name: arbre2(Clone) (3)
   m_TagString: Untagged
@@ -2058,11 +2267,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358452199}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &358452202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358452199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &358878718
 GameObject:
   m_ObjectHideFlags: 0
@@ -2415,8 +2639,7 @@ PrefabInstance:
       propertyPath: stats
       value: 
       objectReference: {fileID: 508193322}
-    - target: {fileID: 3373950170404588946, guid: 9a3a82a609f585e43add3f8b4ff0f14f,
-        type: 3}
+    - target: {fileID: 0}
       propertyPath: treeUi
       value: 
       objectReference: {fileID: 1878855576}
@@ -2586,6 +2809,7 @@ GameObject:
   m_Component:
   - component: {fileID: 393040141}
   - component: {fileID: 393040142}
+  - component: {fileID: 393040143}
   m_Layer: 15
   m_Name: arbre(Clone) (30)
   m_TagString: Untagged
@@ -2616,11 +2840,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 393040140}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &393040143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393040140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &408655220
 GameObject:
   m_ObjectHideFlags: 0
@@ -2631,6 +2870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 408655221}
   - component: {fileID: 408655222}
+  - component: {fileID: 408655223}
   m_Layer: 15
   m_Name: arbre2(Clone) (9)
   m_TagString: Untagged
@@ -2661,11 +2901,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 408655220}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &408655223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 408655220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &413283353
 GameObject:
   m_ObjectHideFlags: 0
@@ -2822,6 +3077,7 @@ GameObject:
   m_Component:
   - component: {fileID: 438854576}
   - component: {fileID: 438854577}
+  - component: {fileID: 438854578}
   m_Layer: 15
   m_Name: arbre2(Clone) (34)
   m_TagString: Untagged
@@ -2852,11 +3108,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438854575}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &438854578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438854575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1001 &454867789
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2960,6 +3231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 529995895}
   - component: {fileID: 529995896}
+  - component: {fileID: 529995897}
   m_Layer: 15
   m_Name: arbre(Clone) (24)
   m_TagString: Untagged
@@ -2990,11 +3262,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 529995894}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &529995897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529995894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1001 &545476737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3086,6 +3373,7 @@ GameObject:
   m_Component:
   - component: {fileID: 553971956}
   - component: {fileID: 553971957}
+  - component: {fileID: 553971958}
   m_Layer: 15
   m_Name: arbre2(Clone) (17)
   m_TagString: Untagged
@@ -3116,11 +3404,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 553971955}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &553971958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553971955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &593015572
 GameObject:
   m_ObjectHideFlags: 0
@@ -3208,6 +3511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 604822280}
   - component: {fileID: 604822281}
+  - component: {fileID: 604822282}
   m_Layer: 15
   m_Name: arbre3(Clone) (12)
   m_TagString: Untagged
@@ -3238,11 +3542,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604822279}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &604822282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604822279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &604935594
 GameObject:
   m_ObjectHideFlags: 0
@@ -3330,6 +3649,7 @@ GameObject:
   m_Component:
   - component: {fileID: 605029709}
   - component: {fileID: 605029710}
+  - component: {fileID: 605029711}
   m_Layer: 15
   m_Name: arbre(Clone) (12)
   m_TagString: Untagged
@@ -3360,11 +3680,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605029708}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &605029711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 605029708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &630373405
 GameObject:
   m_ObjectHideFlags: 0
@@ -3444,6 +3779,7 @@ GameObject:
   m_Component:
   - component: {fileID: 633628559}
   - component: {fileID: 633628560}
+  - component: {fileID: 633628561}
   m_Layer: 15
   m_Name: arbre2(Clone) (27)
   m_TagString: Untagged
@@ -3474,11 +3810,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 633628558}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &633628561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 633628558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &637626966
 GameObject:
   m_ObjectHideFlags: 0
@@ -3939,6 +4290,7 @@ GameObject:
   m_Component:
   - component: {fileID: 695161564}
   - component: {fileID: 695161565}
+  - component: {fileID: 695161566}
   m_Layer: 15
   m_Name: arbre(Clone) (1)
   m_TagString: Untagged
@@ -3969,11 +4321,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695161563}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &695161566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695161563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &701005838
 GameObject:
   m_ObjectHideFlags: 0
@@ -4061,6 +4428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 701204595}
   - component: {fileID: 701204596}
+  - component: {fileID: 701204597}
   m_Layer: 15
   m_Name: arbre2(Clone) (28)
   m_TagString: Untagged
@@ -4091,11 +4459,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 701204594}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &701204597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701204594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &703198480
 GameObject:
   m_ObjectHideFlags: 0
@@ -4106,6 +4489,7 @@ GameObject:
   m_Component:
   - component: {fileID: 703198481}
   - component: {fileID: 703198482}
+  - component: {fileID: 703198483}
   m_Layer: 15
   m_Name: arbre2(Clone) (20)
   m_TagString: Untagged
@@ -4136,11 +4520,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 703198480}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &703198483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 703198480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &719663959
 GameObject:
   m_ObjectHideFlags: 0
@@ -4151,6 +4550,7 @@ GameObject:
   m_Component:
   - component: {fileID: 719663960}
   - component: {fileID: 719663961}
+  - component: {fileID: 719663962}
   m_Layer: 15
   m_Name: arbre3(Clone) (7)
   m_TagString: Untagged
@@ -4181,11 +4581,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 719663959}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &719663962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719663959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &722229580
 GameObject:
   m_ObjectHideFlags: 0
@@ -4196,6 +4611,7 @@ GameObject:
   m_Component:
   - component: {fileID: 722229581}
   - component: {fileID: 722229582}
+  - component: {fileID: 722229583}
   m_Layer: 15
   m_Name: arbre2(Clone) (10)
   m_TagString: Untagged
@@ -4226,11 +4642,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722229580}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &722229583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 722229580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &724978674
 GameObject:
   m_ObjectHideFlags: 0
@@ -4541,6 +4972,7 @@ GameObject:
   m_Component:
   - component: {fileID: 769033731}
   - component: {fileID: 769033732}
+  - component: {fileID: 769033733}
   m_Layer: 15
   m_Name: arbre3(Clone) (4)
   m_TagString: Untagged
@@ -4571,11 +5003,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769033730}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &769033733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 769033730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &787567776
 GameObject:
   m_ObjectHideFlags: 0
@@ -4586,6 +5033,7 @@ GameObject:
   m_Component:
   - component: {fileID: 787567777}
   - component: {fileID: 787567778}
+  - component: {fileID: 787567779}
   m_Layer: 15
   m_Name: arbre3(Clone) (5)
   m_TagString: Untagged
@@ -4616,11 +5064,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 787567776}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &787567779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787567776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &787693392
 GameObject:
   m_ObjectHideFlags: 0
@@ -4708,6 +5171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 799410273}
   - component: {fileID: 799410274}
+  - component: {fileID: 799410275}
   m_Layer: 15
   m_Name: arbre2(Clone) (14)
   m_TagString: Untagged
@@ -4738,11 +5202,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 799410272}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &799410275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799410272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &805019963
 GameObject:
   m_ObjectHideFlags: 0
@@ -4761,7 +5240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &805019964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4852,6 +5331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 823471621}
   - component: {fileID: 823471622}
+  - component: {fileID: 823471623}
   m_Layer: 15
   m_Name: arbre3(Clone) (6)
   m_TagString: Untagged
@@ -4882,11 +5362,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 823471620}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &823471623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823471620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &854779431
 GameObject:
   m_ObjectHideFlags: 0
@@ -4974,6 +5469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 867047387}
   - component: {fileID: 867047388}
+  - component: {fileID: 867047389}
   m_Layer: 15
   m_Name: arbre2(Clone) (26)
   m_TagString: Untagged
@@ -5004,11 +5500,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867047386}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &867047389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 867047386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &879388643
 GameObject:
   m_ObjectHideFlags: 0
@@ -5096,6 +5607,7 @@ GameObject:
   m_Component:
   - component: {fileID: 897706290}
   - component: {fileID: 897706291}
+  - component: {fileID: 897706292}
   m_Layer: 15
   m_Name: arbre(Clone) (27)
   m_TagString: Untagged
@@ -5126,11 +5638,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 897706289}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &897706292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897706289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &900591719
 GameObject:
   m_ObjectHideFlags: 0
@@ -5522,6 +6049,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1001365965}
   - component: {fileID: 1001365966}
+  - component: {fileID: 1001365967}
   m_Layer: 15
   m_Name: arbre3(Clone) (9)
   m_TagString: Untagged
@@ -5552,11 +6080,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001365964}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1001365967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001365964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1038016448
 GameObject:
   m_ObjectHideFlags: 0
@@ -5567,6 +6110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1038016449}
   - component: {fileID: 1038016450}
+  - component: {fileID: 1038016451}
   m_Layer: 15
   m_Name: arbre2(Clone) (7)
   m_TagString: Untagged
@@ -5597,11 +6141,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1038016448}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1038016451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038016448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1038509466 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6889837630749232053, guid: 433ca6c3e4bb1ee4bb4d888aafcff02e,
@@ -5701,6 +6260,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1112201591}
   - component: {fileID: 1112201592}
+  - component: {fileID: 1112201593}
   m_Layer: 15
   m_Name: arbre2(Clone) (4)
   m_TagString: Untagged
@@ -5731,11 +6291,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112201590}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1112201593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112201590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1126874763
 GameObject:
   m_ObjectHideFlags: 0
@@ -6054,6 +6629,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1165638580}
   - component: {fileID: 1165638581}
+  - component: {fileID: 1165638582}
   m_Layer: 15
   m_Name: arbre2(Clone) (15)
   m_TagString: Untagged
@@ -6084,11 +6660,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165638579}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1165638582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165638579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1166110752
 GameObject:
   m_ObjectHideFlags: 0
@@ -6099,6 +6690,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1166110753}
   - component: {fileID: 1166110754}
+  - component: {fileID: 1166110755}
   m_Layer: 15
   m_Name: arbre2(Clone) (16)
   m_TagString: Untagged
@@ -6129,11 +6721,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1166110752}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1166110755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1166110752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1168890470
 GameObject:
   m_ObjectHideFlags: 0
@@ -6205,6 +6812,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1184097069}
   - component: {fileID: 1184097070}
+  - component: {fileID: 1184097071}
   m_Layer: 15
   m_Name: arbre2(Clone) (19)
   m_TagString: Untagged
@@ -6235,11 +6843,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184097068}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1184097071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184097068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1184328849
 GameObject:
   m_ObjectHideFlags: 0
@@ -6250,6 +6873,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1184328850}
   - component: {fileID: 1184328851}
+  - component: {fileID: 1184328852}
   m_Layer: 15
   m_Name: arbre3(Clone) (2)
   m_TagString: Untagged
@@ -6280,11 +6904,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184328849}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1184328852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184328849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1202433859
 GameObject:
   m_ObjectHideFlags: 0
@@ -6295,6 +6934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1202433860}
   - component: {fileID: 1202433861}
+  - component: {fileID: 1202433862}
   m_Layer: 15
   m_Name: arbre(Clone) (25)
   m_TagString: Untagged
@@ -6325,11 +6965,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202433859}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1202433862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202433859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1231578856
 GameObject:
   m_ObjectHideFlags: 0
@@ -6571,6 +7226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1242189962}
   - component: {fileID: 1242189963}
+  - component: {fileID: 1242189964}
   m_Layer: 15
   m_Name: arbre2(Clone) (12)
   m_TagString: Untagged
@@ -6601,11 +7257,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1242189961}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1242189964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1242189961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1244992825
 GameObject:
   m_ObjectHideFlags: 0
@@ -6693,6 +7364,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1264162965}
   - component: {fileID: 1264162966}
+  - component: {fileID: 1264162967}
   m_Layer: 15
   m_Name: arbre(Clone) (9)
   m_TagString: Untagged
@@ -6723,11 +7395,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264162964}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1264162967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264162964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1265979267
 GameObject:
   m_ObjectHideFlags: 0
@@ -6815,6 +7502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1268790871}
   - component: {fileID: 1268790872}
+  - component: {fileID: 1268790873}
   m_Layer: 15
   m_Name: arbre2(Clone) (11)
   m_TagString: Untagged
@@ -6845,11 +7533,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268790870}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1268790873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268790870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1294669473
 GameObject:
   m_ObjectHideFlags: 0
@@ -6860,6 +7563,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1294669474}
   - component: {fileID: 1294669475}
+  - component: {fileID: 1294669476}
   m_Layer: 15
   m_Name: arbre2(Clone) (30)
   m_TagString: Untagged
@@ -6890,11 +7594,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1294669473}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1294669476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1294669473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1317246703 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6889837630749232053, guid: 433ca6c3e4bb1ee4bb4d888aafcff02e,
@@ -6994,6 +7713,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1341845465}
   - component: {fileID: 1341845466}
+  - component: {fileID: 1341845467}
   m_Layer: 15
   m_Name: arbre2(Clone) (13)
   m_TagString: Untagged
@@ -7024,11 +7744,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1341845464}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1341845467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341845464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1344865383
 GameObject:
   m_ObjectHideFlags: 0
@@ -7039,6 +7774,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1344865384}
   - component: {fileID: 1344865385}
+  - component: {fileID: 1344865386}
   m_Layer: 15
   m_Name: arbre(Clone) (19)
   m_TagString: Untagged
@@ -7069,11 +7805,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1344865383}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1344865386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1344865383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1357583662
 GameObject:
   m_ObjectHideFlags: 0
@@ -7846,6 +8597,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1450314851}
   - component: {fileID: 1450314852}
+  - component: {fileID: 1450314853}
   m_Layer: 15
   m_Name: arbre2(Clone) (1)
   m_TagString: Untagged
@@ -7876,11 +8628,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450314850}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1450314853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450314850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1465020487
 GameObject:
   m_ObjectHideFlags: 0
@@ -7968,6 +8735,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1470390520}
   - component: {fileID: 1470390521}
+  - component: {fileID: 1470390522}
   m_Layer: 15
   m_Name: arbre2(Clone) (29)
   m_TagString: Untagged
@@ -7998,11 +8766,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470390519}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1470390522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470390519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1001 &1474089623
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8082,6 +8865,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1475998665}
   - component: {fileID: 1475998666}
+  - component: {fileID: 1475998667}
   m_Layer: 15
   m_Name: arbre2(Clone) (6)
   m_TagString: Untagged
@@ -8112,11 +8896,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475998664}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1475998667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475998664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1501586949
 GameObject:
   m_ObjectHideFlags: 0
@@ -8253,6 +9052,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1513167656}
   - component: {fileID: 1513167657}
+  - component: {fileID: 1513167658}
   m_Layer: 15
   m_Name: arbre(Clone)
   m_TagString: Untagged
@@ -8283,11 +9083,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513167655}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1513167658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513167655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1519391078
 GameObject:
   m_ObjectHideFlags: 0
@@ -8298,6 +9113,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1519391079}
   - component: {fileID: 1519391080}
+  - component: {fileID: 1519391081}
   m_Layer: 15
   m_Name: arbre(Clone) (5)
   m_TagString: Untagged
@@ -8328,11 +9144,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519391078}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1519391081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519391078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1526539192
 GameObject:
   m_ObjectHideFlags: 0
@@ -8497,6 +9328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1532606728}
   - component: {fileID: 1532606729}
+  - component: {fileID: 1532606730}
   m_Layer: 15
   m_Name: arbre(Clone) (17)
   m_TagString: Untagged
@@ -8527,11 +9359,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532606727}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1532606730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532606727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1532889651
 GameObject:
   m_ObjectHideFlags: 0
@@ -8542,6 +9389,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1532889652}
   - component: {fileID: 1532889653}
+  - component: {fileID: 1532889654}
   m_Layer: 15
   m_Name: arbre(Clone) (8)
   m_TagString: Untagged
@@ -8572,11 +9420,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532889651}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1532889654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532889651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1552935542
 GameObject:
   m_ObjectHideFlags: 0
@@ -8587,6 +9450,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1552935543}
   - component: {fileID: 1552935544}
+  - component: {fileID: 1552935545}
   m_Layer: 15
   m_Name: arbre(Clone) (21)
   m_TagString: Untagged
@@ -8617,11 +9481,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1552935542}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1552935545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552935542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1555412239
 GameObject:
   m_ObjectHideFlags: 0
@@ -8632,6 +9511,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1555412240}
   - component: {fileID: 1555412241}
+  - component: {fileID: 1555412242}
   m_Layer: 15
   m_Name: arbre3(Clone) (1)
   m_TagString: Untagged
@@ -8662,11 +9542,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555412239}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1555412242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555412239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1573810847
 GameObject:
   m_ObjectHideFlags: 0
@@ -9139,6 +10034,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1606827537}
   - component: {fileID: 1606827538}
+  - component: {fileID: 1606827539}
   m_Layer: 15
   m_Name: arbre(Clone) (2)
   m_TagString: Untagged
@@ -9169,11 +10065,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1606827536}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1606827539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1606827536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1619939194
 GameObject:
   m_ObjectHideFlags: 0
@@ -9261,6 +10172,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1620721319}
   - component: {fileID: 1620721320}
+  - component: {fileID: 1620721321}
   m_Layer: 15
   m_Name: arbre2(Clone) (8)
   m_TagString: Untagged
@@ -9291,11 +10203,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620721318}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1620721321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620721318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1624152938
 GameObject:
   m_ObjectHideFlags: 0
@@ -9460,6 +10387,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1632283955}
   - component: {fileID: 1632283956}
+  - component: {fileID: 1632283957}
   m_Layer: 15
   m_Name: arbre3(Clone) (11)
   m_TagString: Untagged
@@ -9490,11 +10418,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1632283954}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1632283957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632283954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1634533616
 GameObject:
   m_ObjectHideFlags: 0
@@ -9582,6 +10525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1638956491}
   - component: {fileID: 1638956492}
+  - component: {fileID: 1638956493}
   m_Layer: 15
   m_Name: arbre(Clone) (6)
   m_TagString: Untagged
@@ -9612,11 +10556,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1638956490}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1638956493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638956490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1640275437 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6889837630749232053, guid: 433ca6c3e4bb1ee4bb4d888aafcff02e,
@@ -9639,6 +10598,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1652825701}
   - component: {fileID: 1652825702}
+  - component: {fileID: 1652825703}
   m_Layer: 15
   m_Name: arbre(Clone) (26)
   m_TagString: Untagged
@@ -9669,11 +10629,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1652825700}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1652825703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652825700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1699651843
 GameObject:
   m_ObjectHideFlags: 0
@@ -9684,6 +10659,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1699651844}
   - component: {fileID: 1699651845}
+  - component: {fileID: 1699651846}
   m_Layer: 15
   m_Name: arbre2(Clone) (2)
   m_TagString: Untagged
@@ -9714,11 +10690,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1699651843}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1699651846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699651843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1707560791
 GameObject:
   m_ObjectHideFlags: 0
@@ -9729,6 +10720,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1707560792}
   - component: {fileID: 1707560793}
+  - component: {fileID: 1707560794}
   m_Layer: 15
   m_Name: arbre3(Clone) (13)
   m_TagString: Untagged
@@ -9759,11 +10751,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1707560791}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1707560794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707560791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1712267091
 GameObject:
   m_ObjectHideFlags: 0
@@ -9774,6 +10781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1712267092}
   - component: {fileID: 1712267093}
+  - component: {fileID: 1712267094}
   m_Layer: 15
   m_Name: arbre3(Clone) (10)
   m_TagString: Untagged
@@ -9804,11 +10812,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1712267091}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1712267094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712267091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1719997073
 GameObject:
   m_ObjectHideFlags: 0
@@ -9819,6 +10842,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1719997074}
   - component: {fileID: 1719997075}
+  - component: {fileID: 1719997076}
   m_Layer: 15
   m_Name: arbre2(Clone) (5)
   m_TagString: Untagged
@@ -9849,11 +10873,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719997073}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1719997076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719997073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1001 &1725409710
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9861,6 +10900,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7562978358381748501, guid: 63f764f136058144b8e8fdc251aeb8ff,
+        type: 3}
+      propertyPath: m_Name
+      value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
         type: 3}
       propertyPath: m_LocalRotation.x
@@ -9878,28 +10937,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
         type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0
+      propertyPath: m_LocalRotation.w
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
         type: 3}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
         type: 3}
@@ -9921,9 +10980,35 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1537001560, guid: 63f764f136058144b8e8fdc251aeb8ff, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.19998169
+    - target: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6428115031196125979, guid: 63f764f136058144b8e8fdc251aeb8ff,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 129226909, guid: 63f764f136058144b8e8fdc251aeb8ff, type: 3}
       propertyPath: m_AnchorMin.y
@@ -10113,6 +11198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1734894058}
   - component: {fileID: 1734894059}
+  - component: {fileID: 1734894060}
   m_Layer: 15
   m_Name: arbre(Clone) (32)
   m_TagString: Untagged
@@ -10143,11 +11229,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1734894057}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1734894060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734894057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1750003912
 GameObject:
   m_ObjectHideFlags: 0
@@ -10389,6 +11490,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1788752631}
   - component: {fileID: 1788752632}
+  - component: {fileID: 1788752633}
   m_Layer: 15
   m_Name: arbre(Clone) (4)
   m_TagString: Untagged
@@ -10419,11 +11521,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1788752630}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1788752633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788752630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1795475083
 GameObject:
   m_ObjectHideFlags: 0
@@ -10511,6 +11628,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1802400214}
   - component: {fileID: 1802400215}
+  - component: {fileID: 1802400216}
   m_Layer: 15
   m_Name: arbre3(Clone) (8)
   m_TagString: Untagged
@@ -10541,11 +11659,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1802400213}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1802400216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802400213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1812425751
 GameObject:
   m_ObjectHideFlags: 0
@@ -10787,6 +11920,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1868512654}
   - component: {fileID: 1868512655}
+  - component: {fileID: 1868512656}
   m_Layer: 15
   m_Name: arbre2(Clone) (21)
   m_TagString: Untagged
@@ -10817,11 +11951,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1868512653}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1868512656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1868512653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1878855576
 GameObject:
   m_ObjectHideFlags: 0
@@ -10840,7 +11989,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1878855577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10881,7 +12030,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3373950170404588946}
+      - m_Target: {fileID: 0}
         m_MethodName: Recolter
         m_Mode: 1
         m_Arguments:
@@ -10961,6 +12110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1886451585}
   - component: {fileID: 1886451586}
+  - component: {fileID: 1886451587}
   m_Layer: 15
   m_Name: arbre3(Clone) (3)
   m_TagString: Untagged
@@ -10991,11 +12141,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886451584}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1886451587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886451584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1890112920
 GameObject:
   m_ObjectHideFlags: 0
@@ -11006,6 +12171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1890112921}
   - component: {fileID: 1890112922}
+  - component: {fileID: 1890112923}
   m_Layer: 15
   m_Name: arbre(Clone) (3)
   m_TagString: Untagged
@@ -11036,11 +12202,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1890112920}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1890112923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890112920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1891737220
 GameObject:
   m_ObjectHideFlags: 0
@@ -11152,6 +12333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1908696183}
   - component: {fileID: 1908696184}
+  - component: {fileID: 1908696185}
   m_Layer: 15
   m_Name: arbre(Clone) (28)
   m_TagString: Untagged
@@ -11182,11 +12364,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1908696182}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1908696185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908696182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1912494951
 GameObject:
   m_ObjectHideFlags: 0
@@ -11197,6 +12394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1912494952}
   - component: {fileID: 1912494953}
+  - component: {fileID: 1912494954}
   m_Layer: 15
   m_Name: arbre2(Clone) (33)
   m_TagString: Untagged
@@ -11227,11 +12425,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1912494951}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1912494954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912494951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1914574852
 GameObject:
   m_ObjectHideFlags: 0
@@ -11473,6 +12686,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1942657555}
   - component: {fileID: 1942657556}
+  - component: {fileID: 1942657557}
   m_Layer: 15
   m_Name: arbre(Clone) (11)
   m_TagString: Untagged
@@ -11503,11 +12717,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1942657554}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1942657557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942657554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1942852718
 GameObject:
   m_ObjectHideFlags: 0
@@ -11518,6 +12747,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1942852719}
   - component: {fileID: 1942852720}
+  - component: {fileID: 1942852721}
   m_Layer: 15
   m_Name: arbre(Clone) (20)
   m_TagString: Untagged
@@ -11548,11 +12778,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1942852718}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1942852721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942852718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &1949927792
 GameObject:
   m_ObjectHideFlags: 0
@@ -11563,6 +12808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1949927793}
   - component: {fileID: 1949927794}
+  - component: {fileID: 1949927795}
   m_Layer: 15
   m_Name: arbre2(Clone) (22)
   m_TagString: Untagged
@@ -11593,11 +12839,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1949927792}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1949927795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949927792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1001 &2027468371
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11677,6 +12938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2030950356}
   - component: {fileID: 2030950357}
+  - component: {fileID: 2030950358}
   m_Layer: 15
   m_Name: arbre2(Clone) (25)
   m_TagString: Untagged
@@ -11707,11 +12969,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030950355}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2030950358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2030950355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &2038850750
 GameObject:
   m_ObjectHideFlags: 0
@@ -11799,6 +13076,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2039423340}
   - component: {fileID: 2039423341}
+  - component: {fileID: 2039423342}
   m_Layer: 15
   m_Name: arbre(Clone) (7)
   m_TagString: Untagged
@@ -11829,11 +13107,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2039423339}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2039423342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039423339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &2072432865
 GameObject:
   m_ObjectHideFlags: 0
@@ -11844,6 +13137,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2072432866}
   - component: {fileID: 2072432867}
+  - component: {fileID: 2072432868}
   m_Layer: 15
   m_Name: arbre2(Clone) (24)
   m_TagString: Untagged
@@ -11874,11 +13168,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072432865}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2072432868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072432865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &2082228845
 GameObject:
   m_ObjectHideFlags: 0
@@ -11889,6 +13198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2082228846}
   - component: {fileID: 2082228847}
+  - component: {fileID: 2082228848}
   m_Layer: 15
   m_Name: arbre2(Clone) (32)
   m_TagString: Untagged
@@ -11919,11 +13229,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082228845}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2082228848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082228845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &2082510368
 GameObject:
   m_ObjectHideFlags: 0
@@ -11934,6 +13259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2082510369}
   - component: {fileID: 2082510370}
+  - component: {fileID: 2082510371}
   m_Layer: 15
   m_Name: arbre2(Clone) (23)
   m_TagString: Untagged
@@ -11964,11 +13290,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082510368}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2082510371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082510368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &2093006571
 GameObject:
   m_ObjectHideFlags: 0
@@ -11979,6 +13320,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2093006572}
   - component: {fileID: 2093006573}
+  - component: {fileID: 2093006574}
   m_Layer: 15
   m_Name: arbre2(Clone)
   m_TagString: Untagged
@@ -12009,11 +13351,26 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093006571}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2093006574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093006571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8d1fdd593393084a8b2e07c47e044c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 32768
 --- !u!1 &2109363505
 GameObject:
   m_ObjectHideFlags: 0
@@ -12168,18 +13525,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2139532562}
   m_Mesh: {fileID: 4300000, guid: be217531ada82c54a9844dd19cd5dca3, type: 3}
---- !u!114 &3373950170404588946 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3373950170404588946, guid: 9a3a82a609f585e43add3f8b4ff0f14f,
-    type: 3}
-  m_PrefabInstance: {fileID: 372079095}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6bf36ddcf801884eba9cfdf81b35a90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &7199389432155390273
 Transform:
   m_ObjectHideFlags: 0
