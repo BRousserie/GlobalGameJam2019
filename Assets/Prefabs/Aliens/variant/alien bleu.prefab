@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 1434577855226548355, guid: 2b18ce6b2cae23e48b86591b69dc1b91,
         type: 3}
       propertyPath: m_Name
-      value: alien base
+      value: alien bleu
       objectReference: {fileID: 0}
     - target: {fileID: 3098496092237273503, guid: 2b18ce6b2cae23e48b86591b69dc1b91,
         type: 3}

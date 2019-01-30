@@ -5,6 +5,7 @@ using UnityEngine;
 public class ProjectileMilitaire : MonoBehaviour
 {
     int damage;
+    public GameObject parent;
 
     public void initProjectile(int turretDamage)
     {
@@ -28,6 +29,6 @@ public class ProjectileMilitaire : MonoBehaviour
 
             Character.increaseScore();
         }
-        Destroy(this.gameObject);
+        Destroy(parent);
     }
 }

@@ -40,7 +40,7 @@ public class TirsMilitaires : MonoBehaviour
                 ProjectileMilitaire projectileMilitaire = bullet.GetComponent<ProjectileMilitaire>();
                 if (projectileMilitaire != null)
                     projectileMilitaire.initProjectile(attachedBuilding.Damages);
-                bullet.GetComponent<Rigidbody>().AddForce(direction * (1000f));
+                bullet.GetComponent<Rigidbody>().AddForce(direction * (500f));
 
                 // détruit le projectile après 4 secondes
                 Destroy(bullet, 10f);

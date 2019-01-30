@@ -2,6 +2,7 @@
 
 public class ProjectileAlien : MonoBehaviour
 {
+    public GameObject parent;
     // Ajout d'une autodestruction car si le batiment a été détruit juste après avoir
     // lancé le projectile par un autre projectile, la cible n'existe plus et les projectiles bougent toujours.
     void Awake()
@@ -31,6 +32,10 @@ public class ProjectileAlien : MonoBehaviour
 
             Destroy(other.gameObject);
         }
-        Destroy(this.gameObject);
+        else
+        {
+            Explosions.instance.spawnParticleBatimentJustHit(transform.position);
+        }
+        Destroy(parent);
     }
 }

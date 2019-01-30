@@ -16,8 +16,10 @@ public class Explosions : MonoBehaviour
 
     public GameObject[] explosionsAlien;
     public GameObject[] explosionsBatiment;
+    public GameObject[] explosionsBatimentHit;
     int currentAlien = 0;
     int currentBatiment = 0;
+    int currentBatimentHit = 0;
 
     public void spawnParticleAlien(Vector3 position)
     {
@@ -33,6 +35,7 @@ public class Explosions : MonoBehaviour
         if (currentAlien > explosionsAlien.Length - 1)
             currentAlien = 0;
     }
+
     public void spawnParticleBatiment(Vector3 position)
     {
         explosionsBatiment[currentBatiment].gameObject.transform.position = position;
@@ -46,5 +49,20 @@ public class Explosions : MonoBehaviour
         currentBatiment++;
         if (currentBatiment > explosionsBatiment.Length - 1)
             currentBatiment = 0;
+    }
+
+    public void spawnParticleBatimentJustHit(Vector3 position)
+    {
+        explosionsBatimentHit[currentBatimentHit].gameObject.transform.position = position;
+        ParticleSystem[] particles = explosionsBatimentHit[currentBatimentHit].GetComponentsInChildren<ParticleSystem>();
+
+        foreach (ParticleSystem particle in particles)
+        {
+            particle.Play();
+        }
+
+        currentBatimentHit++;
+        if (currentBatimentHit > explosionsBatimentHit.Length - 1)
+            currentBatimentHit = 0;
     }
 }

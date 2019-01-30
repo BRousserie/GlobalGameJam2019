@@ -296,7 +296,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 12b65cec672560144acc1a9de9dd3861, type: 2}
+  - {fileID: 2100000, guid: 05ebd799fd00b41468fe585b76165497, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -513,8 +513,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b8b795bbab67ed4b886540f1d085d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 5569892163921489621, guid: 9ae7791e9033b784bb97aa7e2b2be7d4,
-    type: 3}
+  projectile: {fileID: 1070339840893364, guid: 823fa3458f3986542ba5a223f40efdce, type: 3}
   attachedBuilding: {fileID: 636061401990211856}
   shoot: {fileID: 7870048356996962125}
   alienOverlapCenter: {fileID: 6191547699859798235}
@@ -589,21 +588,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5376757049715351597, guid: c830c69a4eea21c468b184cc9347f1b1,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 5376757049715351597, guid: c830c69a4eea21c468b184cc9347f1b1,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 5376757049715351597, guid: c830c69a4eea21c468b184cc9347f1b1,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.02
-      objectReference: {fileID: 0}
     - target: {fileID: 1693297585064192008, guid: c830c69a4eea21c468b184cc9347f1b1,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -630,6 +614,21 @@ PrefabInstance:
       value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 4472113759216710785, guid: c830c69a4eea21c468b184cc9347f1b1,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376757049715351597, guid: c830c69a4eea21c468b184cc9347f1b1,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376757049715351597, guid: c830c69a4eea21c468b184cc9347f1b1,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5376757049715351597, guid: c830c69a4eea21c468b184cc9347f1b1,
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.02
